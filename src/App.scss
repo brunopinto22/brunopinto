@@ -1,0 +1,91 @@
+@import './assets/styles/main.scss';
+
+html, body{
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  cursor: default;
+
+  font-family: $base-font;
+
+  background-color: $primary-background;
+  color: $primary-text-color;
+
+  h1, h2, h3{ margin: 0; }
+
+  a{ color: inherit; text-decoration: none; cursor: pointer;}
+  button{ border: none; cursor: pointer;}
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+::selection {
+  background-color: rgba($accent-text-color, 0.1);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.title-font, .title{ font-family: $title-font; font-weight: 100; color: $accent-text-color;}
+.base-font{ font-family: $base-font; }
+.accent-font{ font-family: $accent-font; }
+
+.primary-accent{ color: $primary-accent; }
+.secundary-accent{ color: $secundary-accent; }
+
+.no-cursor{ cursor: none; }
+
+.link{
+  transition: all ease-out 0.2s;
+  &:hover{ color: $primary-accent; }
+}
+
+.primary-button{
+
+  font-family: $accent-font;
+  font-weight: 900;
+
+  background-color: transparent;
+  color: $primary-accent;
+  border-style: solid;
+  border-color: $primary-accent;
+  border-radius: 0.8em;
+
+  transition: ease-out 0.25s;
+
+  &:hover, &:focus{
+    color: $primary-text-color;
+    background: $primary-accent;
+    box-shadow: 0 0 0.6em 0 $primary-accent;
+    transition: ease-out 0.25s;
+
+  }
+}
+
+.accent{
+  position: relative;
+
+  span{
+    position: relative;
+    z-index: 2;
+  }
+
+  svg{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    aspect-ratio: 1;
+    
+    z-index: 0;
+
+    fill: $primary-accent;
+    opacity: 0.5;
+
+  }
+  
+}
