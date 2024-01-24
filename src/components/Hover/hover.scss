@@ -1,0 +1,66 @@
+@import '../../assets/styles/main.scss';
+
+#hover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+
+  width: 0;
+  height: 0;
+
+  background: $secundary-background;
+  font-family: $accent-font;
+  font-weight: 800;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+
+  div{ position: relative; overflow: hidden; }  
+
+  @include shadow(0,0,10px,0, #000000cc);
+
+  @media (min-width: $small-width){
+
+  }
+  
+  @media (min-width: $medium-width){
+
+  }
+  
+  @media (min-width: $large-width){
+    font-size: 1em;
+  }
+
+}
+
+#hover.on {
+  animation: onHover .2s forwards;
+}
+#hover.out {
+  animation: onLeave .2s backwards;
+}
+
+@keyframes onHover {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  100% {
+    width: 10svh;
+    height: 10svh;
+  }
+}
+@keyframes onLeave {
+  0% {
+    width: 10svh;
+    height: 10svh;
+  }
+
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
