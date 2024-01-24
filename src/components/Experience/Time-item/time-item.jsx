@@ -1,5 +1,6 @@
 import './time-item.scss';
 import React, {useEffect, useRef, useState, useMemo} from 'react';
+import { useIsInViewport } from '../../../helpers';
 
 const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, references, setHoverText, setOnHover }) => {
 
@@ -13,8 +14,19 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
     setOnHover(false);
   };
 
+  const ref = useRef(null);
+
+  const [inView, setInView] = useState(false);
+  const isInView = useIsInViewport(ref);
+  if(isInView != inView)
+    setInView(isInView);
+
+  useEffect(() => {
+    console.log(ref + " onView");
+  }, [inView]);
+
   return (
-    <div className="time-item">
+    <div ref={ref} className={"time-item" + (inView ? " show" : "")}>
       
       <div className="time-title">
         <h2>{firstYear} - {lastYear}</h2>

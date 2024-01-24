@@ -1,16 +1,22 @@
 @import '../../assets/styles/main.scss';
 
 #xp {
+  display: grid;
+  position: relative;
+  overflow: hidden;
 
   .title{
     text-align: center;
     text-transform: capitalize;
   }
 
-  .timeline{
+  &::before{
+    content: '';
     position: absolute;
-    background-color: $secundary-text-color;
+    top: 0;
     height: 100%;
+    background-color: $secundary-text-color;
+    background: linear-gradient(180deg, rgba($secundary-text-color,0) 0%, rgba($secundary-text-color,1) 15%, rgba($secundary-text-color,1) 85%, rgba($secundary-text-color,0) 100%);
   }
 
   @media (min-width: $small-width){
@@ -24,16 +30,17 @@
   }
   
   @media (min-width: $large-width){
-    padding: 30svh $large-secundary-padding;
+    padding: 200svh $large-secundary-padding;
+    grid-gap: 100svh;
 
     .title{
       font-size: 2em;
       .accent svg{ width: 150%;}
     }
 
-    .timeline{
+    &::before{
       width: 2px;
-      margin-left: - calc($large-secundary-padding/3);
+      margin-left: calc($large-secundary-padding/1.5);
     }
 
   }

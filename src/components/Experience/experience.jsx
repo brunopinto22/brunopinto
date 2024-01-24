@@ -1,6 +1,6 @@
+import './experience.scss';
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { useIsInViewport } from '../../helpers';
-import './experience.scss';
 
 import TimeItem from './Time-item/time-item';
 import {ExperienceData} from '../../data';
@@ -19,8 +19,6 @@ function Experience(props) {
 
   return (
     <section id="xp" ref={ref}>
-      
-      <div className="timeline" />
 
       {ExperienceData.map((item, index) => (
 

@@ -5,6 +5,9 @@
   display: grid;
   text-align: left;
 
+  *{ opacity: 0.2; }
+  transition: opacity 1.5s;
+
   &::before{
     content: '';
     position: absolute;
@@ -64,7 +67,6 @@
   }
   
   @media (min-width: $large-width){
-    padding: 38svh 0;
     grid-gap: 4svh;
 
     &::before{
@@ -93,4 +95,9 @@
 
   }
 
+}
+
+.time-item.show *{
+  transition: opacity 1.5s;
+  opacity: 1;
 }
