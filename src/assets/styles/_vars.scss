@@ -1,0 +1,38 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// --- FONTS --- \\
+$title-font: 'Young Serif', serif;
+$base-font: 'Inter', sans-serif;
+$accent-font: 'Source Code Pro', monospace;
+
+// --- VALUES --- \\
+// corners
+$outer-radius: 2vw;
+$inner-radius: 1vw;
+
+// large screens
+$large-width: 1200px;
+$large-primary-padding: 5vw;
+$large-secundary-padding: 10vw;
+// medium screens
+$medium-width: 782px;
+$medium-primary-padding: 5vw;
+$medium-secundary-padding: 10vw;
+// small screens
+$small-width: 0px;
+$small-primary-padding: 2vw;
+$small-secundary-padding: 5vw;
+
+
+// --- COLORS --- \\
+$primary-accent: #E69517;
+$primary-background: #181818;
+$secundary-background: #1f1f1f;
+$primary-text-color: #E4E4E4;
+$secundary-text-color: #6d6d6d;
+$accent-text-color: #FFFFFF;
+$secundary-accent: #9260ff;
+$shadow-color: #181818;
