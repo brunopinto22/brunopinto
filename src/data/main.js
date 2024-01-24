@@ -1,6 +1,7 @@
 const Main =
 {
   name: 'Bruno Pinto',
+  username: 'brunopinto',
   roles: ['Web Developer', 'Software Enginner', 'Web Designer'],
 
   links:
@@ -11,7 +12,13 @@ const Main =
     instagram: 'https://www.instagram.com/bruno.pinto.20/',
     discord: 'https://discord.com/users/561281835561123870',
     spotify: 'https://open.spotify.com/user/2rlflj131gg9ytptxvcmfg00b?si=d13ba05a93934eb6',
-  }
+  },
+
+  playlist:
+  [
+    {name: '20:22pm', link: 'https://open.spotify.com/playlist/6521tpeW1j0Q21S8McSFBS?si=232e65e4103b4618'},
+    {name: '❆ Chill ❆', link: 'https://open.spotify.com/playlist/16KPrXjf1VltzvPJLdLZ9X?si=443faa2519024d3a'},
+  ]
 };
 
 export default Main;
