@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './hover.scss';
 
-//import './script.js';
-
 function Hover(props) {
 
   const [scrollPos, setScrollPos] = useState(0);
