@@ -11,8 +11,6 @@ nav {
 
   z-index: 100;
 
-  input{ display: none;}
-
   &::after {
     content: "";
     position: absolute;
@@ -81,36 +79,6 @@ nav {
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: center;
-      
-      .theme-toggle {
-        position: relative;
-        display: inherit;
-
-        img{ cursor: pointer; margin: 0; filter: contrast(0); }
-
-        &::after{
-          content: "";
-          position: absolute;
-          z-index: -1;
-
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-      
-          aspect-ratio: 1/1;
-          width: 0%;
-          border-radius: 50%;
-          
-          background-color: rgba($primary-accent, 0.2);
-          
-        }
-
-        &:hover::after{
-          box-shadow: 0 0 0 0.5em transparent;
-          width: 130%;
-        }
-
-      }
     
     }
 
@@ -134,7 +102,7 @@ nav {
   }
   
   @media (min-width: $large-width){
-    padding: 2vh $large-primary-padding;
+    padding: 2svh $large-primary-padding;
 
     .content{
       grid-template-columns: 1fr 1fr;
@@ -149,8 +117,6 @@ nav {
         font-size: 0.9em;
         margin: 0 0 0 1.5vw;
       }
-
-      .theme-toggle img{ width: 2em; }
 
     }
 
