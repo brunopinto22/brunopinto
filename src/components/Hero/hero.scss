@@ -1,0 +1,179 @@
+@import '../../assets/styles/main.scss';
+
+header{
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+
+  .hero-text{
+
+    .title-font{
+      position: relative;
+      z-index: 1;
+
+      &::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+    
+        top: 50%;
+        left: -2.5%;
+        height: 35%;
+        width: 105%;
+
+        background-color: $primary-accent;
+        opacity: 0.5;
+      }
+
+    }
+
+    .socials svg {
+      fill: $primary-text-color; opacity: 0.7;
+      transition: all 0.2s;
+      &:hover{ fill: $primary-accent; }
+    }
+
+  }
+
+  .hero-avatar, .hero-avatar .image{
+    height: inherit;
+  }
+
+  .hero-avatar{
+
+    position: relative;
+
+    .image{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      flex-wrap: nowrap;
+
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+
+      transition: all ease-in-out 0.1s;
+      
+    }
+
+    .dots-grid{
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      grid-template-rows: repeat(13, 1fr);
+      align-items: center;
+      justify-items: center;
+
+      z-index: 0;
+
+      width: 100%;
+      height: 100%;
+      
+      opacity: 0.6;
+
+    }
+
+  }
+
+  .scroll{
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    left: 0;
+    bottom: 15vh;
+
+    color: $secundary-text-color;
+
+    transform: rotateZ(-90deg);
+
+    p{
+      z-index: 2;
+      font-family: $accent-font;
+      font-weight: 500;
+    }
+
+    svg{
+      z-index: 1;
+
+      opacity: 0.2;
+      fill:$primary-accent;
+      aspect-ratio: 1;
+      transform: scale(-1, 1);
+    }
+
+    &::before{
+      content: "";
+      position: absolute;
+
+      height: 1px;
+
+      background: rgb(255,0,0);
+      background: linear-gradient(90deg, rgba($secundary-text-color, 1) 0%, rgba($secundary-text-color, 0) 100%);
+    }
+
+  }
+
+
+  @media (min-width: $small-width){
+    padding: 0 $small-secundary-padding;
+    
+  }
+  
+  @media (min-width: $medium-width){
+    padding: 0 $medium-secundary-padding;
+
+  }
+  
+  @media (min-width: $large-width){
+    height: 70vh;
+    padding: 15vh $large-secundary-padding;
+
+    grid-template-columns: 55% 45%;
+
+    .hero-text{
+      font-size: 2.5em;
+
+      h2{ font-weight: 300; line-height: 0.5em;}
+      #typed{ font-weight: 700;}
+
+      .primary-button{
+        margin: 6vh 0;
+        padding: 1.5vh 3vw;
+        
+        font-size: 0.5em;
+
+        border-width: 0.2em;
+      }
+
+    }
+
+    .socials a{
+      margin-right: 1vw;
+      svg {
+        width: 2.5vw;
+        height: 4.5vh;
+      }
+    }
+
+    .scroll{
+
+      svg{
+        height: 13vh;
+        margin: 0 0 0 -16vh;
+      }
+
+      &::before{
+        width: 60vh;
+        margin: 0.2vw 0 0 13vh;
+      }
+
+    }
+
+  }
+}
