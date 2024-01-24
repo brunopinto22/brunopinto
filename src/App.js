@@ -1,7 +1,7 @@
 import "./App.scss";
 import React, { useState, useEffect } from 'react';
 import { MainInfo } from "./data";
-import { Navbar, Hero, Skills, Experience, Hover } from "./components";
+import { Navbar, Hero, Skills, Experience, Hover, Footer } from "./components";
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
 
       <Experience setHoverText={setHoverText} setOnHover={setOnHover} />
 
-      <Skills />
+      <Footer />
 
     </>
   );
