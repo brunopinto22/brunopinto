@@ -1,0 +1,43 @@
+@import '../../assets/styles/main.scss';
+
+#xp {
+
+  .title{
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .timeline{
+    position: absolute;
+    background-color: $secundary-text-color;
+    height: 100%;
+  }
+
+  @media (min-width: $small-width){
+    padding: 0 $small-secundary-padding;
+    
+  }
+  
+  @media (min-width: $medium-width){
+    padding: 0 $medium-secundary-padding;
+    
+  }
+  
+  @media (min-width: $large-width){
+    padding: 30svh $large-secundary-padding;
+
+    .title{
+      font-size: 2em;
+      .accent svg{ width: 150%;}
+    }
+
+    .timeline{
+      width: 2px;
+      margin-left: - calc($large-secundary-padding/3);
+    }
+
+  }
+
+}
+
+

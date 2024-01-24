@@ -1,0 +1,96 @@
+@import '../../../assets/styles/main.scss';
+
+.time-item{
+
+  display: grid;
+  text-align: left;
+
+  &::before{
+    content: '';
+    position: absolute;
+    background-color: $primary-accent;
+    border-radius: 100%;
+  }
+
+  .time-title {
+    h2{
+      font-family: $accent-font;
+      color: $primary-accent;
+    }
+    h1{
+      font-family: $title-font;
+      color: $accent-text-color;
+      
+      span{
+        font-family: $accent-font;
+        color: $secundary-text-color;
+        .link{
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+
+  .content-container{
+    display: grid;
+    .image-cover{
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: $inner-radius;
+      aspect-ratio: 1;
+      @include shadow(0,0,20px,0px,rgba($shadow-color, 1));
+    }
+  }
+
+  .content{
+    .reference{
+      display: grid;
+      font-family: $accent-font;
+      h1{ color: $secundary-accent; }
+      a{
+        color: $secundary-text-color;
+        &:hover{ color: $primary-accent; }
+      }
+    }
+  }
+
+  @media (min-width: $small-width){
+    
+  }
+  
+  @media (min-width: $medium-width){
+
+  }
+  
+  @media (min-width: $large-width){
+    padding: 38svh 0;
+    grid-gap: 4svh;
+
+    &::before{
+      margin-top: 2vh;
+      margin-left: - calc($large-secundary-padding / 2.35 );
+      width: 3vh;
+      height: 3vh;
+      border: 4px solid $accent-text-color;
+    }
+
+    .time-title{
+      h1{
+        font-size: 2.5em;
+        span{font-size: 0.7em;}
+      }
+    }
+
+    .content-container{
+      grid-template-columns: 40% auto;
+      grid-gap: 4vw;
+    }
+
+    .content{
+      .reference{ grid-gap: 2vh; }
+    }
+
+  }
+
+}
