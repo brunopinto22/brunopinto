@@ -1,14 +1,20 @@
 {
   "name": "brunopinto",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/three": "^0.158.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.69.5",
+    "three": "^0.158.0",
+    "typed.js": "^2.0.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +40,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "brunopinto"
+  },
+  "author": "brunopinto22",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.5.0"
   }
 }
