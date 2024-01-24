@@ -1,0 +1,40 @@
+@import '../../assets/styles/main.scss';
+
+#skills {
+
+  .title{
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  @media (min-width: $small-width){
+    padding: 0 $small-secundary-padding;
+    
+  }
+  
+  @media (min-width: $medium-width){
+    padding: 0 $medium-secundary-padding;
+    
+  }
+  
+  @media (min-width: $large-width){
+    padding: 68svh $large-secundary-padding;
+
+    .title{
+      font-size: 2em;
+      .accent svg{ width: 150%;}
+    }
+
+    .content{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 6vw;
+
+      padding: 10svh 2vw;
+    }
+
+  }
+
+}
+
+

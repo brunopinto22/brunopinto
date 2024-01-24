@@ -1,0 +1,82 @@
+@import '../../../assets/styles/main.scss';
+
+.skill-card{
+
+  text-align: center;
+
+  background-color: $secundary-background;
+  border-radius: $outer-radius;
+
+  @include shadow(0,0,20px,-10px, rgba($shadow-color, 0.8));
+
+  .card-title{
+    font-family: $accent-font;
+    font-weight: 700;
+  }
+
+  .progress-item{
+
+    h2{
+      text-align: left;
+      font-family: $base-font;
+      font-weight: 200;
+    }
+
+    .pr-container{
+
+      position: relative;
+      background-color: $primary-background;
+
+      .pr{
+        height: 100%;
+        background: linear-gradient(90deg, rgba($primary-accent, 1) 30%,  rgba(mix($primary-accent, #FFF, 70%), 1) 100%);
+        transition: all 1.5s;
+      }
+
+    }
+
+  }
+
+  transition: all ease-in-out 0.2s;
+  &:hover{
+    transition: all ease-in-out 0.3s;
+  }
+
+
+  @media (min-width: $small-width){
+    
+  }
+  
+  @media (min-width: $medium-width){
+
+  }
+  
+  @media (min-width: $large-width){
+    padding: 10svh 3vw;
+
+    .card-title{
+      font-size: 1.6em;
+    }
+
+    .progress-container{
+      padding: 6svh 0 0;
+
+      h2{
+        font-size: 1.2em;
+        margin: 0 0 0.8svh 0.8vw;
+      }
+
+      .pr-container{
+
+        width: 100%;
+        height: 0.8svh;
+
+        margin: 0 0 2.5svh;
+  
+      }
+
+    }
+
+  }
+
+}
