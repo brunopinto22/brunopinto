@@ -1,7 +1,8 @@
 import "./App.scss";
 import React, { useState, useEffect } from 'react';
+
 import { MainInfo } from "./data";
-import { Navbar, Hero, Skills, Experience, Hover, Footer } from "./components";
+import { Navbar, Footer, Hover, Hero, Skills, Experience, Work } from "./components";
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
       <Skills />
 
       <Experience setHoverText={setHoverText} setOnHover={setOnHover} />
+
+      <Work />
 
       <Footer />
 
