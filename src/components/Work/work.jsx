@@ -1,10 +1,19 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState } from 'react';
 import './work.scss';
 
 import { Underline } from '../Icons';
-import { MainInfo } from '../../data';
+import { MainInfo, WorkData } from '../../data';
 
-function Work() {
+function Work(props) {
+
+  const handleMouseEnter = () => {
+    props.setHoverText("Check");
+    props.setOnHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    props.setOnHover(false);
+  };
 
   return (
     <section id="work">
@@ -14,13 +23,25 @@ function Work() {
 
       <div className="content">
         <div className="img-grid">
-          <a className='div1'></a>
-          <a className='div2' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
-          <a className='div3' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
-          <a className='div4' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
-          <a className='div5' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
-          <a className='div6' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
-          <a className='div7' style={{ backgroundImage: "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdGkAx0tDgoj6y7jAiVj1LtFwdxpoQBS1dqLE77dIc0g&s)" }}></a>
+        {WorkData.map((item, index) => (
+          item.url ? (
+          <a
+            key={index}
+            className="img-container no-cursor"
+            style={{backgroundImage: (item.img && `url(img/${item.img})`)}}
+            href={item.url}
+            target='_blank'
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+          ) : (
+          <div
+            key={index}
+            className="img-container"
+            style={{backgroundImage: (item.img && `url(img/${item.img})`)}}
+          />
+          )
+          ))}
         </div>
 
         <a className="primary-button" href={MainInfo.links.gihub} target="_blank">More Projects</a>
