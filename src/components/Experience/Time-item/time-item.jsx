@@ -36,7 +36,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
       <div className="content-container">
 
         <div className="image-cover no-cursor hover"
-          style={{backgroundImage: `url(${cover})`}}
+          style={{backgroundImage: `url(img/${cover})`}}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />
