@@ -10,7 +10,6 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
   };
 
   const handleMouseLeave = () => {
-    setHoverText("");
     setOnHover(false);
   };
 
