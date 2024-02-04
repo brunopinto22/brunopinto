@@ -17,9 +17,9 @@ function Navbar(props) {
         </div>
         <div className="links">
           <a className="link" href='#skills'>skills</a>
-          <a className="link" href='#xp'>xp</a>
-          <a className="link" href='#'>work</a>
-          <a className="link" href='#'>about</a>
+          <a className="link" href='#xp'>experience</a>
+          <a className="link" href='#work'>work</a>
+          <a className="link" href='#about'>about</a>
         </div>
       </div>
     </nav>
