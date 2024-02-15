@@ -58,6 +58,31 @@
     }
   }
 
+
+  .gallery{
+    display: none;
+    background-color: $secundary-background;
+    div{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .gallery.show{
+    position: fixed;
+    display: grid;
+  
+    top: 0;
+    left: 0;
+    z-index: 101;
+  
+    width: 100%;
+    height: 100svh;
+    width: fill-available;
+    height: fill-available;
+  }
+
+
   @media (min-width: $small-width){
     
   }
@@ -93,6 +118,13 @@
       .reference{ grid-gap: 2vh; }
     }
 
+    .gallery{
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+      grid-gap: 0.5vw;
+      padding: 0.5vw;
+    }
+
   }
 
 }
@@ -101,3 +133,4 @@
   transition: opacity 1.5s;
   opacity: 1;
 }
+

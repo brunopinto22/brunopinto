@@ -2,14 +2,27 @@ import './time-item.scss';
 import React, {useEffect, useRef, useState, useMemo} from 'react';
 import { useIsInViewport } from '../../../helpers';
 
-const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, references, setHoverText, setOnHover }) => {
+const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, references, gallery, setHoverText, setOnHover }) => {
 
-  const handleMouseEnter = () => {
-    setHoverText("Click");
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    if (!gallery || gallery.length === 0) return;
+    setShow(!show);
+
+    document.body.style.overflow = show ? '' : 'hidden';
+    setHoverText('Leave');
+    setOnHover(!show);
+
+  }
+
+  const handleMouseEnter = (x) => {
+    if (!gallery || gallery.length === 0) return;
+    setHoverText(x);
     setOnHover(true);
   };
 
   const handleMouseLeave = () => {
+    if (!gallery || gallery.length === 0) return;
     setOnHover(false);
   };
 
@@ -25,7 +38,17 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
   }, [inView]);
 
   return (
-    <div ref={ref} className={"time-item" + (inView ? " show" : "")}>
+    <div ref={ref} className={"time-item " + (inView ? "show" : "")}>
+
+      {gallery.length > 0 && (
+        <div className={"gallery no-cursor " + (show ? "show" : "")}
+          onClick={handleClick} onMouseEnter={() => handleMouseEnter('Leave')} onMouseLeave={handleMouseLeave}
+        >
+          {gallery.map((item, index) => (
+            <div key={index} style={{backgroundImage: `url(img/${item.img})`, gridArea: item.grid}}></div>
+          ))}
+        </div>
+      )}
       
       <div className="time-title">
         <h2>{firstYear} - {lastYear}</h2>
@@ -34,10 +57,11 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
 
       <div className="content-container">
 
-        <div className="image-cover no-cursor hover"
+        <div className={"image-cover " + (gallery.length > 0 ? "no-cursor hover" : "")}
           style={{backgroundImage: `url(img/${cover})`}}
-          onMouseEnter={handleMouseEnter}
+          onMouseEnter={() => handleMouseEnter('Click')}
           onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
         />
 
         <div className="content">
