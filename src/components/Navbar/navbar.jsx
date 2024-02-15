@@ -8,7 +8,6 @@ function Navbar(props) {
 
   return (
     <nav id="nav">
-      <div className="blur" />
       <div className="content">
         <div className="logo">
           <a href="">
