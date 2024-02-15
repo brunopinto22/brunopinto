@@ -7,7 +7,7 @@ import { MainInfo, WorkData } from '../../data';
 function Work(props) {
 
   const handleMouseEnter = () => {
-    props.setHoverText("Check");
+    props.setHoverText("Check⌝");
     props.setOnHover(true);
   };
 
