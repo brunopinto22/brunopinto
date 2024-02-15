@@ -32,7 +32,7 @@ function Footer(props) {
         <div>
           <h1 className="title">References</h1>
           {ExperienceData.map((item, index) => (
-            <a className="link" target="_blank" href={item.link}>{item.place}</a>
+            <a key={index} className="link" target="_blank" href={item.link}>{item.place}</a>
           ))}
         </div>
 
@@ -48,7 +48,7 @@ function Footer(props) {
         <div>
           <h1 className="title">~</h1>
           {MainInfo.playlist.map((item, index) => (
-            <a className="link" target="_blank" href={item.link}>{item.name}</a>
+            <a key={index} className="link" target="_blank" href={item.link}>{item.name}</a>
           ))}
           <a className="link" target="_blank" href="#">eastereggs</a>          
         </div>
