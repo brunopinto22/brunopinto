@@ -13,7 +13,9 @@ const ExperienceData = [
     references: [
       { title: '1 reference', link: '' },
       { title: '2 reference', link: '' },
-    ]
+    ],
+
+    gallery: []
   },
 
   {
@@ -30,7 +32,9 @@ const ExperienceData = [
     references: [
       { title: '1 reference', link: '' },
       { title: '2 reference', link: '' },
-    ]
+    ],
+
+    gallery: []
   },
 
   {
@@ -47,6 +51,30 @@ const ExperienceData = [
     references: [
       { title: '1 reference', link: '' },
       { title: '2 reference', link: '' },
+    ],
+
+    gallery: [
+      { img: 'coimbra_6.jpg',
+        grid: '7 / 1 / 10 / 5'
+      },
+      { img: 'coimbra_7.jpg',
+        grid: '1 / 1 / 7 / 3'
+      },
+      { img: 'coimbra_5.jpg',
+        grid: '1 / 3 / 4 / 5'
+      },
+      { img: 'coimbra_2.jpg', 
+        grid: '4 / 3 / 7 / 5'
+      },
+      { img: 'coimbra_1.jpeg', 
+        grid: '5 / 5 / 10 / 9'
+      },
+      { img: 'coimbra_4.jpg', 
+        grid: '1 / 5 / 5 / 11'
+      },
+      { img: 'coimbra_8.jpg', 
+        grid: '5 / 9 / 10 / 11'
+      },
     ]
   },
   
