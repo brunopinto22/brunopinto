@@ -49,8 +49,7 @@ function Footer(props) {
           <h1 className="title">~</h1>
           {MainInfo.playlist.map((item, index) => (
             <a key={index} className="link" target="_blank" href={item.link}>{item.name}</a>
-          ))}
-          <a className="link" target="_blank" href="#">eastereggs</a>          
+          ))}      
         </div>
         
       </div>
