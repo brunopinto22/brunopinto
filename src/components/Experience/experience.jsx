@@ -32,6 +32,7 @@ function Experience(props) {
           cover={item.cover}
           text={item.text}
           references={item.references}
+          gallery={item.gallery}
 
           setHoverText={props.setHoverText}
           setOnHover={props.setOnHover}
