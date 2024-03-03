@@ -1,9 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './about.scss';
 
 import { MainInfo } from '../../data';
 
 function About(props) {
+
+  const [pfp, setPfp] = useState(MainInfo.pfp);
+  const handleClick = () => {
+    if(pfp === MainInfo.pfp)
+      setPfp(MainInfo.pfp_alt);
+    else
+      setPfp(MainInfo.pfp);
+  }
 
   return (
     <section id="about">
@@ -13,7 +21,7 @@ function About(props) {
 
       <div className="container">
 
-        <img src="img/pfp.png" alt="profile_picture" />
+        <div className="pfp" style={{backgroundImage: `url(img/${pfp})`}} onClick={handleClick} ></div>
 
         <div className="text">
           <p className='title'>Hi I'm <span className="title-font">{MainInfo.name}</span> , nice to meet you!</p>

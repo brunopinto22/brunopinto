@@ -15,7 +15,15 @@
     display: grid;
   }
 
-  img{ width: 100%; border-radius: $inner-radius; @include shadow(0,0,40px,0, #0000007a)}
+  .pfp{
+    width: 100%;
+    aspect-ratio: 1/1.1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $inner-radius;
+    @include shadow(0,0,40px,0, #0000007a);
+  }
 
   .text .title-font {
     position: relative;
@@ -74,6 +82,7 @@
       margin: 20vh 0;
       grid-template-columns: 40% 1fr;
       grid-gap: 5vw;
+      align-items: center;
     }
 
     .text{
