@@ -54,7 +54,7 @@
       a{
         display: grid;
         color: $secundary-text-color;
-        &:hover{ color: $primary-accent; }
+        &:hover{ color: $primary-accent; svg{ fill: $primary-accent;} }
       }
     }
   }
