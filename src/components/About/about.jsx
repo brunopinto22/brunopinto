@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './about.scss';
 
 import { MainInfo } from '../../data';
+import clickSound from '../../assets/sounds/click.mp3';
 
 function About(props) {
 
   const [pfp, setPfp] = useState(MainInfo.pfp);
   const handleClick = () => {
+
+    const audio = new Audio(clickSound);
+    audio.play();
+
     if(pfp === MainInfo.pfp)
       setPfp(MainInfo.pfp_alt);
     else
