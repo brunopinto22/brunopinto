@@ -17,7 +17,7 @@ function Contact(props) {
   return (
     <section id="contact">
 
-      <div className={`background + ${backgroundClassName}`}>
+      <div className={`background ${backgroundClassName}`}>
         <p></p>
         <p></p>
         <p></p>
