@@ -1,6 +1,7 @@
 export { default as Arrow } from "./arrow";
 export { default as Circle } from "./circle";
 export { default as Underline } from "./underline";
+export { default as Bullet } from "./bullet";
 export { default as Corner } from "./corner";
 
 export { default as Discord } from "./accounts/discord";
