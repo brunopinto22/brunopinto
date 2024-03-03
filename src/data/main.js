@@ -2,6 +2,8 @@ const Main =
 {
   name: 'Bruno Pinto',
   username: 'brunopinto',
+  pfp: 'pfp.png',
+  pfp_alt: 'pfp_alt.jpeg',
   roles: ['Web Developer', 'Software Enginner', 'Web Designer'],
 
   links:
