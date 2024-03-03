@@ -2,7 +2,7 @@ import "./App.scss";
 import React, { useState, useEffect } from 'react';
 
 import { MainInfo } from "./data";
-import { Navbar, Footer, Hover, Hero, Skills, Experience, Work, About } from "./components";
+import { Navbar, Footer, Hover, Hero, Skills, Experience, Work, About, Contact } from "./components";
 
 function App() {
 
@@ -35,6 +35,8 @@ function App() {
       <Work setHoverText={setHoverText} setOnHover={setOnHover} />
 
       <About />
+
+      <Contact mousePos={mousePos} />
 
       <Footer />
 
