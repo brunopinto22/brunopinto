@@ -30,7 +30,7 @@
       .pr{
         height: 100%;
         background: linear-gradient(90deg, rgba($primary-accent, 1) 30%,  rgba(mix($primary-accent, #FFF, 70%), 1) 100%);
-        transition: all 1.5s;
+        transition: all 1.5s ease-out;
       }
 
     }
