@@ -2,6 +2,8 @@ import './time-item.scss';
 import React, {useEffect, useRef, useState, useMemo} from 'react';
 import { useIsInViewport } from '../../../helpers';
 
+import { Bullet } from '../../Icons';
+
 const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, references, gallery, setHoverText, setOnHover }) => {
 
   const [show, setShow] = useState(false);
@@ -70,7 +72,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
           <div className="reference">
             <h1>References:</h1>
             {references.map((ref, index) => (
-              <a key={index} href={ref.link} className="link">{ref.title}</a>
+              <a key={index} href={ref.link} className="link"><Bullet />{ref.title}</a>
             ))}
           </div>
 

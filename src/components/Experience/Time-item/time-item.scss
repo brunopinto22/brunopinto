@@ -52,6 +52,7 @@
       font-family: $accent-font;
       h1{ color: $secundary-accent; }
       a{
+        display: grid;
         color: $secundary-text-color;
         &:hover{ color: $primary-accent; }
       }
@@ -115,7 +116,11 @@
     }
 
     .content{
-      .reference{ grid-gap: 2vh; }
+      .reference{
+        grid-gap: 2vh;
+        a{ grid-template-columns: auto 1fr; grid-gap: 0.5vw; align-items: center; }
+        svg{ width: 0.8vw; }
+      }
     }
 
     .gallery{
