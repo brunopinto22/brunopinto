@@ -21,7 +21,7 @@ function Skills(props) {
   const tools = [
     { name: 'React', number: 82 },
     { name: 'Adobe XD / Figma', number: 87 },
-    { name: 'Blender', number: 85 },
+    { name: 'Blender', number: 68 },
     { name: 'Boostrap', number: 78 },
   ];
 
