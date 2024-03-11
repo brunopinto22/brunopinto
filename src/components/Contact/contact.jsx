@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './contact.scss';
 
 import { MainInfo } from '../../data';
-import { Underline, Mail, Instagram, Linkedin, Discord } from '../Icons';
+import { Underline, Mail, Instagram, Linkedin, Discord, Bullet } from '../Icons';
 
 function Contact(props) {
   const [backgroundClassName, setBackgroundClassName] = useState('default');
@@ -27,8 +27,12 @@ function Contact(props) {
 
       <div className="content">
 
-        <div className="title">
-          <h1>Let's Create <span className={`accent ${backgroundClassName}`}><span>Something</span><Underline /></span></h1>
+        <div className={`title ${backgroundClassName}`}>
+          <span className="lines"><Bullet /></span>
+
+          <h1>Let's Create <span className="accent"><span>Something</span><Underline /></span></h1>
+
+          <span className="lines"><Bullet /></span>
         </div>
 
         <div className="links">

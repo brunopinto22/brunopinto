@@ -20,16 +20,25 @@
 
   .content{ position: relative; backdrop-filter: blur(80px);}
 
-  .title svg {
-    width: 110%;
-    top: 95%;
-  }
-  .accent{
-    svg{ transition: all 1s; }
-    &.email svg{ fill: $mail; }
-    &.instagram svg{ fill: $instagram; }
-    &.linkedin svg{ fill: $linkedin; }
-    &.discord svg{ fill: $discord; }
+
+  .title{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .lines:nth-child(1){ text-align: right; }
+    .lines:last-child{ text-align: left; }
+
+    .lines svg { width: 15%; fill: $primary-accent; }
+    .accent svg {
+      width: 110%;
+      top: 95%;
+    }
+
+    svg { transition: all 1s; }
+    &.email{ .lines svg, .accent svg{ fill: $mail; } }
+    &.instagram{ .lines svg, .accent svg{ fill: $instagram; } }
+    &.linkedin{ .lines svg, .accent svg{ fill: $linkedin; } }
+    &.discord{ .lines svg, .accent svg{ fill: $discord; } }
   }
 
   .links{ position: relative; display: grid; font-family: $accent-font; color: $secundary-text-color; }
