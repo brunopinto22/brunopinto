@@ -61,27 +61,26 @@
 
 
   .gallery{
-    display: none;
+    position: fixed;
+    display: grid;
     background-color: $secundary-background;
+
+    top: 0;
+    left: 0;
+  
+    width: 100vw;
+    height: 100svh;
+    width: fill-available;
+    height: fill-available;
+
     div{
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
   }
-  .gallery.show{
-    position: fixed;
-    display: grid;
-  
-    top: 0;
-    left: 0;
-    z-index: 101;
-  
-    width: 100%;
-    height: 100svh;
-    width: fill-available;
-    height: fill-available;
-  }
+  .gallery.hide{ opacity: 0; z-index: -1; transition: opacity 0.5s, z-index 1s; }
+  .gallery.show{ opacity: 1; z-index: 101; transition: opacity 0.5s; }
 
 
   @media (min-width: $small-width){

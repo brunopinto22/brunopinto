@@ -43,7 +43,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
     <div ref={ref} className={"time-item " + (inView ? "show" : "")}>
 
       {gallery.length > 0 && (
-        <div className={"gallery no-cursor " + (show ? "show" : "")}
+        <div className={"gallery no-cursor " + (show ? "show" : "hide")}
           onClick={handleClick} onMouseEnter={() => handleMouseEnter('Leave')} onMouseLeave={handleMouseLeave}
         >
           {gallery.map((item, index) => (
