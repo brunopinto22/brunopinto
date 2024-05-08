@@ -58,11 +58,14 @@ html, body{
 
   &:hover, &:focus{
     color: $primary-text-color;
-    background: $primary-accent;
-    box-shadow: 0 0 0.6em 0 $primary-accent;
+    transform: translateY(-7px);
+    box-shadow:
+      0 0.5em 1em rgba($primary-accent, 0.2),
+      inset 0 -100px 0 0 $primary-accent;
     transition: ease-out 0.25s;
 
   }
+  &:active{ transform: translateY(-1px); }
 }
 
 .accent{
