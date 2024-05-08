@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber'
-import { useGLTF, Environment } from '@react-three/drei'
-import { Group } from 'three';
+import { useGLTF } from '@react-three/drei'
 
 export function Head(props) {
   const { nodes, materials } = useGLTF("/head.glb");
@@ -9,14 +8,11 @@ export function Head(props) {
   const [rotation, setRotation] = useState(3);
   useEffect(() => {
     const interval = setInterval(() => {
-      if(rotation <= 8)
         setRotation((prevRotation) => prevRotation + 0.01);
-      else
-        setRotation(3);
     }, 16);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [rotation]);
 
   return (
     <group {...props} dispose={null}>
@@ -35,7 +31,9 @@ export function Head(props) {
 function Avatar(props) {
   return (
     <Canvas frameloop="demand" camera={{ position: [100, 5, -5], fov: 4.8 }}>
+
       <Head />
+
       <group position={[-1, 1, -1]}>
       <ambientLight
         intensity={0.2}
@@ -47,6 +45,7 @@ function Avatar(props) {
         groundColor={0x7a4900}
       />
       </group>
+
     </Canvas>
   )
 }
