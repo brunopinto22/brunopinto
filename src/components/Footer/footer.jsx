@@ -15,9 +15,9 @@ function Footer(props) {
           <a className="link" href="#">Home</a>
           <a className="link" href="#skills">Skills</a>
           <a className="link" href="#xp">Experience</a>
-          <a className="link" href="#">Work</a>
-          <a className="link" href="#">About</a>
-          <a className="link" href="#">Contact</a>
+          <a className="link" href="#work">Work</a>
+          <a className="link" href="#about">About</a>
+          <a className="link" href="#contact">Contact</a>
         </div>
         
         <div>
