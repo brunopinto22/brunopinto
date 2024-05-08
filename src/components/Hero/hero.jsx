@@ -34,7 +34,7 @@ function Hero(props) {
         <h2>Hi, I'm <span className="title-font">{MainInfo.name}</span></h2>
         <br/>
         <h2>I'm a <span id="typed" className="accent-font secundary-accent" ref={el}></span></h2>
-        <a className="primary-button">Let's work together!</a>
+        <a className="primary-button" href="#contact">Let's work together!</a>
         <div className="socials">
           <a target='_blank' href={`mailto:${MainInfo.links.mail}`}><Mail /></a>
           <a target='_blank' href={MainInfo.links.gihub}><GitHub/></a>
