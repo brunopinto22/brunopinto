@@ -17,8 +17,7 @@ html, body{
   button{ border: none; cursor: pointer;}
   svg{ fill: $secundary-text-color; }
 
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-color: rgba($primary-text-color, 0.2) $primary-background;
 
 }
 
