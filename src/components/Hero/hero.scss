@@ -119,7 +119,7 @@ header{
 
       height: 1px;
 
-      background: rgb(255,0,0);
+      background: rgb(0,0,0);
       background: linear-gradient(90deg, rgba($secundary-text-color, 1) 0%, rgba($secundary-text-color, 0) 100%);
     }
 
@@ -127,19 +127,97 @@ header{
 
 
   @media (min-width: $small-width){
-    padding: 0 $small-secundary-padding;
+    padding: 20svh $small-secundary-padding 60svh;
+
+    position: relative;
+
+    .hero-text{
+      display: grid;
+      grid-template-rows: 9svh 1fr 1fr;
+
+      height: 20svh;
+      z-index: 1;
+
+      font-size: 1.1em;
+
+      h2{ font-weight: 300; line-height: 0.9em;}
+      #typed{ font-weight: 700;}
+
+      .primary-button{
+        margin: 6vh 0;
+        padding: 1.5vh 10vw;
+        
+        font-size: 0.8em;
+
+        border-width: 0.2em;
+      }
+
+    }
+
+    .hero-avatar{
+      position: absolute;
+      width: 175%;
+      height: 95%;
+      opacity: 0.4;
+      z-index: 0;
+
+      .dots-grid{ display: none; }
+
+    }
+
+    .socials{
+      a{
+        margin-right: 5vw;
+        svg {
+          width: 9vw;
+        }
+      }
+    }
+
+    .scroll{
+      left: -20vw;
+
+      svg{
+        height: 13vh;
+        margin: 0 0 0 -16vh;
+      }
+
+      &::before{
+        width: 20vh;
+        margin: 1vw 0 0 14vh;
+      }
+
+    }
     
   }
   
   @media (min-width: $medium-width){
     padding: 0 $medium-secundary-padding;
 
+    .hero-avatar{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+  
+      .image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .dots-grid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
   }
   
   @media (min-width: $large-width){
-    height: 70vh;
     padding: 15vh $large-secundary-padding;
 
+    height: 70vh;
     grid-template-columns: 55% 45%;
 
     .hero-text{
@@ -159,15 +237,38 @@ header{
 
     }
 
-    .socials a{
-      margin-right: 1vw;
-      svg {
-        width: 2.5vw;
-        height: 4.5vh;
+    .hero-avatar{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+  
+      .image{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .dots-grid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .socials{
+      display: inherit;
+      a{
+        margin-right: 1vw;
+        svg {
+          width: 2.5vw;
+          height: 4.5vh;
+        }
       }
     }
 
     .scroll{
+
+      left: 0;
 
       svg{
         height: 13vh;

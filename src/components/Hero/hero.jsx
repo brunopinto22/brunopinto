@@ -31,10 +31,15 @@ function Hero(props) {
     onMouseLeave={() => setIsHovered(false)}>
 
       <div className="hero-text">
-        <h2>Hi, I'm <span className="title-font">{MainInfo.name}</span></h2>
-        <br/>
-        <h2>I'm a <span id="typed" className="accent-font secundary-accent" ref={el}></span></h2>
-        <a className="primary-button" href="#contact">Let's work together!</a>
+
+        <span>
+          <h2>Hi, I'm <span className="title-font">{MainInfo.name}</span></h2>
+          <br/>
+          <h2>I'm a <span id="typed" className="accent-font secundary-accent" ref={el}></span></h2>
+        </span>
+
+        <span><a className="primary-button" href="#contact">Let's work together!</a></span>
+
         <div className="socials">
           <a target='_blank' href={`mailto:${MainInfo.links.mail}`}><Mail /></a>
           <a target='_blank' href={MainInfo.links.gihub}><GitHub/></a>
