@@ -20,8 +20,18 @@
   }
 
   @media (min-width: $small-width){
-    padding: 0 $small-secundary-padding;
-    
+    padding: 100svh $small-secundary-padding;
+    grid-gap: 100svh;
+
+    .title{
+      font-size: 2em;
+      .accent svg{ width: 150%;}
+    }
+
+    &::before{
+      width: 3px;
+      margin-left: calc($large-secundary-padding/2);
+    }
   }
   
   @media (min-width: $medium-width){
