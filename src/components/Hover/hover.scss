@@ -22,14 +22,16 @@
   @include shadow(0,0,10px,0, #000000cc);
 
   @media (min-width: $small-width){
+    display: none;
 
   }
   
   @media (min-width: $medium-width){
-
+    display: flex;
   }
   
   @media (min-width: $large-width){
+    display: flex;
     font-size: 1em;
   }
 
