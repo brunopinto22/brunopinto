@@ -47,7 +47,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
           onClick={handleClick} onMouseEnter={() => handleMouseEnter('Leave')} onMouseLeave={handleMouseLeave}
         >
           {gallery.map((item, index) => (
-            <div key={index} style={{backgroundImage: `url(img/${item.img})`, gridArea: item.grid}}></div>
+            <div key={index} style={{backgroundImage: `url(img/${item})`}}></div>
           ))}
         </div>
       )}
