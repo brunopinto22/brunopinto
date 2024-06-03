@@ -22,13 +22,29 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      overflow: hidden;
+      position: relative;
       @include shadow(0,0,10px,0, #00000085);
     }
   }
 
   @media (min-width: $small-width){
-    padding: 0 $small-secundary-padding;
+    padding: 40svh $small-secundary-padding;
     
+    .title{ font-size: 1.3em; text-align: center; }
+
+    .content{ padding: 10svh 0;}
+
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 0; font-size: 1.2em; width: 100%; text-align: center; }
+
+    .img-grid{
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      grid-gap: 2svh;
+      width: 100%;
+
+      .img-container{ border-radius: 2vw; width: 100%; height: 100%; img {width: 100%;} }
+    }
   }
   
   @media (min-width: $medium-width){
@@ -43,14 +59,15 @@
 
     .content{ padding: 10svh 0;}
 
-    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; font-size: 1.2em;}
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; font-size: 1.2em; width: unset; }
 
     .img-grid{
+      width: unset;
       grid-template-columns: repeat(4, 18vw);
       grid-auto-rows: 18vw;
       grid-gap: 1vw;
 
-      .img-container{ border-radius: $inner-radius; }
+      .img-container{ border-radius: $inner-radius; img{ display: none; } }
 
       .img-container:nth-child(1){ grid-area: 1 / 1 / 3 / 3; }
       .img-container:nth-child(2){ grid-area: 1 / 3 / 2 / 5; }

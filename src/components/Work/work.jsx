@@ -33,13 +33,17 @@ function Work(props) {
             target='_blank'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-          />
+          >
+            <img src={"img/" + item.img} alt={item.img} />
+          </a>
           ) : (
           <div
             key={index}
             className="img-container"
             style={{backgroundImage: (item.img && `url(img/${item.img})`)}}
-          />
+          >
+            <img src={"img/" + item.img} alt={item.img} />
+          </div>
           )
           ))}
         </div>
