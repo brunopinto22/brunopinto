@@ -62,8 +62,36 @@
   }
 
   @media (min-width: $small-width){
-    padding: 0 $small-secundary-padding;
-    
+    padding: 20svh $large-secundary-padding;
+
+    .title{ font-size: 1.3em;}
+    .title .accent::after{
+      width: 25vw; height: 25vw;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+    .title .accent::before{
+      width: 20vw; height: 20vw;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+
+    .container{
+      margin: 10vh 0;
+      grid-template-rows: 40% 1fr;
+      grid-gap: 5vw;
+      align-items: center;
+    }
+
+    .text{
+      font-size: 1.2em;
+      line-height: 1.2em;
+      p{ margin: 0; }
+      .title{ font-size: 1.2em; margin-bottom: 2em;}
+      .title-font{ font-size: 1.2em; }
+    }
 
   }
   
