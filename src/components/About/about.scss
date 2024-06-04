@@ -62,7 +62,7 @@
   }
 
   @media (min-width: $small-width){
-    padding: 20svh $large-secundary-padding;
+    padding: 20svh $small-secundary-padding;
 
     .title{ font-size: 1.3em;}
     .title .accent::after{
@@ -121,6 +121,7 @@
     .container{
       margin: 20vh 0;
       grid-template-columns: 40% 1fr;
+      grid-template-rows: unset;
       grid-gap: 5vw;
       align-items: center;
     }
