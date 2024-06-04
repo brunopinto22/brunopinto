@@ -7,6 +7,7 @@ import clickSound from '../../assets/sounds/click.mp3';
 function About(props) {
 
   const [pfp, setPfp] = useState(MainInfo.pfp);
+  
   const handleClick = () => {
 
     const audio = new Audio(clickSound);
@@ -18,6 +19,16 @@ function About(props) {
       setPfp(MainInfo.pfp);
   }
 
+  
+  const handleMouseEnter = (x) => {
+    props.setHoverText(x);
+    props.setOnHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    props.setOnHover(false);
+  };
+
   return (
     <section id="about">
       <div className="title">
@@ -26,7 +37,14 @@ function About(props) {
 
       <div className="container">
 
-        <div className="pfp" style={{backgroundImage: `url(img/${pfp})`}} onClick={handleClick} ></div>
+        <div
+          className="pfp no-cursor hover"
+          style={{backgroundImage: `url(img/${pfp})`}}
+
+          onMouseEnter={() => handleMouseEnter('👀')}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
+        />
 
         <div className="text">
           <p className='title'>Hi I'm <span className="title-font">{MainInfo.name}</span> , nice to meet you!</p>
