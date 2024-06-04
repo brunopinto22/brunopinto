@@ -21,7 +21,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: $inner-radius;
     @include shadow(0,0,40px,0, #0000007a);
   }
 
@@ -85,6 +84,8 @@
       align-items: center;
     }
 
+    .pfp { border-radius: 3vw; }
+
     .text{
       font-size: 1.2em;
       line-height: 1.2em;
@@ -125,6 +126,8 @@
       grid-gap: 5vw;
       align-items: center;
     }
+
+    .pfp { border-radius: $inner-radius; }
 
     .text{
       font-size: 1.3em;
