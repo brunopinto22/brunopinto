@@ -28,7 +28,6 @@ footer {
 
     *{
       display: block;
-      width: max-content;
       margin: 0;
     }
 
@@ -59,6 +58,23 @@ footer {
 
   @media (min-width: $small-width){
     
+    .content {
+      padding: 10svh $small-secundary-padding;
+      grid-template-rows: 1fr;
+      grid-gap: 10svh;
+      justify-content: center;
+      text-align: center;
+
+      *{ width: unset; }
+
+      h1{ font-size: 1.5em; margin-bottom: 0.8em;}
+      p, a{ font-size: 1em; line-height: 2em; }
+
+    }
+
+    .copy-right {
+      padding: 3svh $small-secundary-padding;
+    }
 
   }
   
@@ -69,10 +85,13 @@ footer {
   
   @media (min-width: $large-width){
 
-
     .content {
       padding: 6svh $large-secundary-padding;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: unset;
+      grid-gap: unset;
+
+      *{ width: max-content; }
       
       h1{ font-size: 1.8em; margin-bottom: 0.8em;}
       p, a{ font-size: 1em; line-height: 2em; }
@@ -82,8 +101,6 @@ footer {
     .copy-right {
       padding: 2svh $large-secundary-padding;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-
     }
 
   }
