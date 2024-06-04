@@ -28,7 +28,6 @@
     .lines:nth-child(1){ text-align: right; }
     .lines:last-child{ text-align: left; }
 
-    .lines svg { width: 15%; fill: $primary-accent; }
     .accent svg {
       width: 110%;
       top: 95%;
@@ -44,10 +43,6 @@
   .links{ position: relative; display: grid; font-family: $accent-font; color: $secundary-text-color; }
 
   .links *{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-
     transition: all ease-out 0.2s;
     &:hover{
       transition: all ease-out 0.2s;
@@ -64,8 +59,45 @@
     &:nth-child(4):hover { svg { fill: $discord; } color: $discord; }
   }
 
+  
   @media (min-width: $small-width){
-    //padding: 0 $small-secundary-padding;
+    .content{ padding: 50svh $small-secundary-padding; }
+
+    .background p{
+      width: 100vw;
+      height: 100vw;
+
+
+      &:nth-child(1){
+        opacity: 0.05;
+        top: 35%;
+        left: -25%;
+        border-radius: 101% 68% 50% 23%;
+        transform: rotate(100deg);
+      }
+
+    }
+
+    .title{
+      display: unset;
+      text-align: center;
+      font-size: 1em;
+      .lines svg { width: 0; fill: $primary-accent; }
+    }
+
+    .links{
+      margin: 5svh 0 0;
+      font-size: 1.3em;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 7vw;
+        margin: 2svh 0;
+        svg{ width: 10vw; }
+      }
+
+    }
     
 
   }
@@ -122,15 +154,26 @@
 
     }
 
-    .title{ text-align: center; font-size: 2em;}
+    .title{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: end;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 2em;
+      .lines svg { width: 15%; fill: $primary-accent; }
+    }
 
-    .links{
+    .links {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-items: center;
       margin: 15svh 0 0;
       font-size: 1.3em;
 
       a {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
         grid-gap: 1vw;
         svg{ width: 3vw; }
       }
