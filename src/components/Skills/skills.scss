@@ -8,7 +8,14 @@
   }
 
   @media (min-width: $small-width){
-    padding: 0 $small-secundary-padding;
+    padding: 45svh $small-secundary-padding;
+
+    .title{
+      font-size: 1.3em;
+      .accent svg{ width: 160%;}
+    }
+
+    .content{ padding: 10svh 0;}
     
   }
   

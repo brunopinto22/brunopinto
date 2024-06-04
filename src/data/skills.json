@@ -1,0 +1,67 @@
+[
+  {
+    "title" : "Coding",
+    "skills" : [
+      {
+        "name": "C",
+        "percentage" : 95,
+        "link" : ""
+      },
+      {
+        "name": "C++",
+        "percentage" : 55,
+        "link" : ""
+      },
+      {
+        "name": "Java",
+        "percentage" : 45,
+        "link" : ""
+      }
+    ]
+  },
+  {
+    "title" : "Web Development",
+    "skills" : [
+      {
+        "name": "HTML",
+        "percentage" : 98,
+        "link" : ""
+      },
+      {
+        "name": "CSS / SCSS",
+        "percentage" : 96,
+        "link" : ""
+      },
+      {
+        "name": "JavaScript",
+        "percentage" : 62,
+        "link" : ""
+      }
+    ]
+  },
+  {
+    "title" : "Tools",
+    "skills" : [
+      {
+        "name": "React",
+        "percentage" : 82,
+        "link" : ""
+      },
+      {
+        "name": "Adobe XD / Figma",
+        "percentage" : 87,
+        "link" : ""
+      },
+      {
+        "name": "Blender",
+        "percentage" : 68,
+        "link" : "https://youtu.be/3w5aJzEuHIk?si=KNt2VW-5IYTxmegm"
+      },
+      {
+        "name": "Boostrap",
+        "percentage" : 78,
+        "link" : ""
+      }
+    ]
+  }
+]
