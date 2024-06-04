@@ -34,7 +34,7 @@ function App() {
 
       <Work setHoverText={setHoverText} setOnHover={setOnHover} />
 
-      <About />
+      <About setHoverText={setHoverText} setOnHover={setOnHover} />
 
       <Contact mousePos={mousePos} />
 
