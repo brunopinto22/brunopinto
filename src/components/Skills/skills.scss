@@ -15,12 +15,29 @@
       .accent svg{ width: 160%;}
     }
 
-    .content{ padding: 10svh 0;}
+    .content{
+      display: grid;
+      padding: 10svh 0;
+      grid-gap: 5svh;
+    }
     
   }
   
   @media (min-width: $medium-width){
-    padding: 0 $medium-secundary-padding;
+    padding: 20svh $medium-secundary-padding;
+
+    .title{
+      font-size: 2em;
+      .accent svg{ width: 150%;}
+    }
+
+    .content{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 3vw;
+
+      padding: 5svh 0 ;
+    }
     
   }
   

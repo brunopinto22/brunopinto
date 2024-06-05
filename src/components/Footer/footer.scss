@@ -80,6 +80,23 @@ footer {
   
   @media (min-width: $medium-width){
 
+    .content {
+      padding: 6svh $large-secundary-padding;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: unset;
+      grid-gap: 5svh;
+
+      *{ width: max-content; }
+      
+      h1{ font-size: 2em; margin-bottom: 0.8em;}
+      p, a{ font-size: 1.2em; line-height: 2em; }
+
+    }
+
+    .copy-right {
+      padding: 2svh $large-secundary-padding;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 
   }
   

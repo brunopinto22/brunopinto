@@ -80,6 +80,34 @@
   }
   
   @media (min-width: $medium-width){
+    height: unset;
+    padding: 3svh 3vw 2svh;
+    border-radius: $outer-radius;
+
+    .card-content{ height: unset; }
+
+    .card-title{
+      font-size: 1.5em;
+    }
+
+    .progress-container{
+      padding: 6svh 0 0;
+
+      h2{
+        font-size: 1.3em;
+        margin: 0 0 0.8svh 0.8vw;
+      }
+
+      .pr-container{
+
+        width: 100%;
+        height: 0.7svh;
+
+        margin: 0 0 2.5svh;
+  
+      }
+
+    }
 
   }
   

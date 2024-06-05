@@ -103,8 +103,40 @@
   }
   
   @media (min-width: $medium-width){
-    //padding: 0 $medium-secundary-padding;
+    .content{ padding: 50svh $large-secundary-padding; }
 
+    .background p{
+      width: 80vw;
+      height: 85vw;
+
+      &:nth-child(1){
+        opacity: 0.05;
+        top: 30%;
+        left: 40%;
+        border-radius: 162% 60% 141% 57%;
+        transform: rotate(16deg);
+      }
+
+    }
+
+    .title{
+      font-size: 2em;
+    }
+
+    .links {
+      justify-content: center;
+      margin: 5svh 0 0;
+      font-size: 2em;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 4vw;
+        margin: 2svh 0;
+        svg{ width: 5vw; }
+      } 
+
+    }
 
   }
   

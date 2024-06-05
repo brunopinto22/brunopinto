@@ -126,8 +126,22 @@ nav {
   }
   
   @media (min-width: $medium-width){
-    padding: 0 $medium-primary-padding;
+    padding: 1.5svh $medium-primary-padding;
 
+    .content{
+      grid-template-columns: 1fr 1fr;
+
+      font-size: 1.4em;
+
+      .logo a h1{ text-align: left; }
+      &:last-child{ text-align: right;}
+
+    }
+
+    #ham{
+      height: 1vh;
+      div { width: 1em; height: 20%}
+    }
 
   }
   
@@ -207,11 +221,11 @@ nav {
   }
   
   @media (min-width: $medium-width){
-    width: 15vw;
-    padding: 1vw;
-    &.hide{ right: -17vw; }
+    width: 35vw;
+    padding: 3vw;
+    &.hide{ right: -37vw; }
 
-    svg{ height: 1.5em; }
+    svg{ height: 2em; }
 
     .content {
       height: 60%;
@@ -221,7 +235,7 @@ nav {
       justify-content: center;
       text-align: center;
 
-      a{ margin: 2svh 0; }
+      a{ margin: 2svh 0; font-size: 1.4em; }
 
     }
 
@@ -243,7 +257,7 @@ nav {
       justify-content: center;
       text-align: center;
 
-      a{ margin: 2svh 0; }
+      a{ margin: 2svh 0; font-size: unset; }
 
     }
 

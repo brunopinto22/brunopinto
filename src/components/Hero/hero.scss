@@ -192,7 +192,26 @@ header{
   }
   
   @media (min-width: $medium-width){
-    padding: 0 $medium-secundary-padding;
+    padding: 10vh $medium-secundary-padding;
+
+    height: 30vh;
+    grid-template-columns: 55% 45%;
+
+    .hero-text{
+      display: unset;
+      font-size: 1.5em;
+
+      h2{ font-weight: 300; line-height: 0.5em;}
+      #typed{ font-weight: 700;}
+
+      .primary-button{
+        margin: 5vh 0;
+        padding: 1.2vh 5vw;
+        font-size: 0.8em;
+        border-width: 0.2em;
+      }
+
+    }
 
     .hero-avatar{
       position: relative;
@@ -211,6 +230,21 @@ header{
         height: 100%;
       }
     }
+
+    .socials{
+      display: inherit;
+      a{
+        margin-right: 3vw;
+        svg {
+          width: 4.5vw;
+        }
+      }
+    }
+
+    .scroll{
+      display: none;
+    }
+
 
   }
   
@@ -268,7 +302,7 @@ header{
     }
 
     .scroll{
-
+      display: grid;
       left: 0;
 
       svg{

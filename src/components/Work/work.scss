@@ -48,8 +48,14 @@
   }
   
   @media (min-width: $medium-width){
-    padding: 0 $medium-secundary-padding;
-    
+    padding: 30svh $medium-secundary-padding;
+
+    .title{ font-size: 2em; }
+
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; font-size: 1.2em; width: 50%; }
+
+    .img-grid{ .img-container{ border-radius: 2vw; } }
+
   }
   
   @media (min-width: $large-width){
