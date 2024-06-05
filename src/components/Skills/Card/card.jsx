@@ -22,7 +22,7 @@ const Card = ({ title, data }) => {
         {data.map((item, index) => (
           <div className="progress-item" key={index}>
 
-            {item.link === "" ? (<h2>{item.name}</h2>) : (<h2><a className="link" href={item.link}>{item.name}</a></h2>)}
+            {item.link === "" ? (<h2>{item.name}</h2>) : (<h2><a className="link" target='_blank' href={item.link}>{item.name}</a></h2>)}
 
             <div className="pr-container"><div className="pr" style={{ width: (inView ? item.percentage : 0) + '%' }}></div></div>
 
