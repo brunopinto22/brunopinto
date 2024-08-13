@@ -53,7 +53,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
       )}
       
       <div className="time-title">
-        <h2>{firstYear} - {lastYear}</h2>
+        <h2>{firstYear} {lastYear && `- ${lastYear}`}</h2>
         <h1>{title} <span>@<a className="link" href={placeLink} target='_blank'>{place}</a></span></h1>
       </div>
 
@@ -67,7 +67,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
         />
 
         <div className="content">
-          <p>{text}</p>
+          <p className="text">{text}</p>
 
           <div className="reference">
             <h1>References:</h1>
