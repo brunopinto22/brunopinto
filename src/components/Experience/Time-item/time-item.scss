@@ -48,7 +48,7 @@
 
   .content{
     .text{white-space: pre-line;}
-    .reference{
+    .links{
       display: grid;
       font-family: $accent-font;
       h1{ color: $secundary-accent; }
@@ -111,7 +111,7 @@
 
       .text{ margin-bottom: 10svh; }
 
-      .reference{
+      .links{
         margin: 5svh 0;
         grid-gap: 2vh;
         h1{ font-size: 1.2em; }
@@ -165,7 +165,7 @@
 
       .text{ margin-bottom: 5svh; }
 
-      .reference{
+      .links{
         margin: 5svh 0;
         grid-gap: 2vh;
         h1{ font-size: 1.5em; }
@@ -224,7 +224,7 @@
 
       .text{ margin-bottom: 5svh; }
 
-      .reference{
+      .links{
         margin: 0;
         grid-gap: 2vh;
         h1{ font-size: unset; }

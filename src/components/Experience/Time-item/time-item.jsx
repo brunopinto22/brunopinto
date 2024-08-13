@@ -69,10 +69,10 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
         <div className="content">
           <p className="text">{text}</p>
 
-          <div className="reference">
-            <h1>References:</h1>
+          <div className="links">
+            <h1>Links:</h1>
             {references.map((ref, index) => (
-              <a key={index} href={ref.link} className="link"><Bullet />{ref.title}</a>
+              <a key={index} href={ref.link} className="link" target="_blank"><Bullet />{ref.title}</a>
             ))}
           </div>
 
