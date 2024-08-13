@@ -2,7 +2,8 @@
 
 .time-item{
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
   text-align: left;
 
   *{ opacity: 0.2; }
@@ -106,6 +107,9 @@
 
     .content{
       margin: 5svh 0;
+
+      .text{ margin-bottom: 10svh; }
+
       .reference{
         margin: 5svh 0;
         grid-gap: 2vh;
@@ -157,6 +161,9 @@
 
     .content{
       margin: 5svh 0;
+
+      .text{ margin-bottom: 5svh; }
+
       .reference{
         margin: 5svh 0;
         grid-gap: 2vh;
@@ -213,6 +220,9 @@
 
     .content{
       margin: 0;
+
+      .text{ margin-bottom: 5svh; }
+
       .reference{
         margin: 0;
         grid-gap: 2vh;

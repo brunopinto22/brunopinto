@@ -1,7 +1,8 @@
 @import '../../assets/styles/main.scss';
 
 #xp {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
 
@@ -30,7 +31,7 @@
 
     &::before{
       width: 3px;
-      margin-left: calc($large-secundary-padding/2);
+      left: calc($large-secundary-padding/2);
     }
   }
   
@@ -45,7 +46,7 @@
 
     &::before{
       width: 2px;
-      margin-left: calc($large-secundary-padding/1.5);
+      left: calc($large-secundary-padding/1.5);
     }
   }
   
@@ -60,7 +61,7 @@
 
     &::before{
       width: 2px;
-      margin-left: calc($large-secundary-padding/1.5);
+      left: calc($large-secundary-padding/1.5);
     }
 
   }
