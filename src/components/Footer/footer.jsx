@@ -22,7 +22,7 @@ function Footer(props) {
         
         <div>
           <h1 className="title">Accounts</h1>
-          <a className="link" target="_blank" href={MainInfo.links.linkedin}>Linkedind</a>
+          <a className="link" target="_blank" href={MainInfo.links.linkedin}>Linkedin</a>
           <a className="link" target="_blank" href={MainInfo.links.gihub}>GitHub</a>
           <a className="link" target="_blank" href={MainInfo.links.instagram}>Instagram</a>
           <a className="link" target="_blank" href={MainInfo.links.discord}>Discord</a>
