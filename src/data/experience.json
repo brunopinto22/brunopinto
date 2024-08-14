@@ -9,11 +9,8 @@
 
     "cover": "Agueda.jpg",
 
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et vulputate urna. Morbi posuere purus ligula, quis faucibus purus sodales ut. Maecenas mattis consectetur eros, sollicitudin fringilla ex pretium vel. Donec mattis diam vel mi suscipit pharetra. Ut id metus leo. Aliquam nec lobortis diam. Mauris fringilla nibh sed enim vulputate scelerisque Integer eu volutpat ante. Sed luctus elit id libero semper tristique. Morbi eget elit fermentum purus feugiat tempus. Proin rutrum eget sem sed gravida. Pellentesque at tincidunt metus. Fusce leo velit, porta eget finibus non, elementum pulvinar justo. Maecenas ut magna dignissim, pharetra felis ut, egestas neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quam elit, luctus sed orci semper, egestas aliquam diam. Nam neque ex, pretium eu urna sit amet, dictum dignissim odio.",
-    "references": [
-      { "title": "1 reference", "link": "" },
-      { "title": "2 reference", "link": "" }
-    ],
+    "text": "Picture this: a classroom full of excited teens, all eager to see their first **‘Hello World’** program come to life. There we were, each of us staring at our computers, bewildered as our simple C programs refused to run. My journey started with a small setback but ignited a **passion** and **curiosity** for software and coding that’s been growing ever since.\nDuring the course I studied all the **fundamentals of Computer Science**, covering everything from pseudocode and databases to hardware and binary systems.\nThis solid foundation was crucial in setting me up for further opportunities, including an internship at [Critec](https://www.critec.pt/inicio) and later pursuing a **bachelor’s degree** in the field.",
+    "references": [],
 
     "gallery": []
   },
@@ -28,13 +25,32 @@
 
     "cover": "Critec.jpg",
 
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et vulputate urna. Morbi posuere purus ligula, quis faucibus purus sodales ut. Maecenas mattis consectetur eros, sollicitudin fringilla ex pretium vel. Donec mattis diam vel mi suscipit pharetra. Ut id metus leo. Aliquam nec lobortis diam. Mauris fringilla nibh sed enim vulputate scelerisque Integer eu volutpat ante. Sed luctus elit id libero semper tristique. Morbi eget elit fermentum purus feugiat tempus. Proin rutrum eget sem sed gravida. Pellentesque at tincidunt metus. Fusce leo velit, porta eget finibus non, elementum pulvinar justo. Maecenas ut magna dignissim, pharetra felis ut, egestas neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quam elit, luctus sed orci semper, egestas aliquam diam. Nam neque ex, pretium eu urna sit amet, dictum dignissim odio.",
+    "text": "Stepping into my internship in web development was like jumping into the deep end of the pool. I gained hands-on experience coding the foundational elements of websites, from building the base structure to updating and adding new pages on live websites. I also learned to use **new tools** such as [Bootstrap](https://getbootstrap.com) for responsive design and the [BO3-BOzon](https://github.com/One-Shift/BO3-BOzon) back office system for content management.\nCollaborating with a talented team, I tackled **real coding challenges** and contributed to the development and maintenance of functional websites, which helped me grow not only my technical skills but also my **interpersonal** and **collaboration abilities**.",
     "references": [
-      { "title": "1 reference", "link": "" },
-      { "title": "2 reference", "link": "" }
+      { "title": "Metalcértima", "link": "https://www.metalcertima.pt/inicio" },
+      { "title": "Nkfitting", "link": "https://www.nkfitting.pt/inicio" }
     ],
 
     "gallery": []
+  },
+
+  {
+    "firstYear": 2024,
+    "lastYear": null,
+
+    "title": "Volunteering",
+    "place": "Viagem Medieval",
+    "link": "https://www.viagemmedieval.com",
+
+    "cover": "smf.png",
+
+    "text": "Volunteering at the Viagem Medieval em Terras de Santa Maria da Feira was a truly immersive experience almost like stepping into a living history book. I worked with a team to manage a section featuring a theatrical performance by the company [Mercador de Fábulas](https://mercadorfabulas.wordpress.com). My role involved assisting visitors, providing information, and ensuring a smooth experience for everyone on site. This opportunity was not only a delight but also a fantastic growth experience. I developed **strong interpersonal skills** through interactions with people from various backgrounds and formed lasting friendships with my fellow volunteers.",
+    "references": [
+      { "title": "Mercador de Fábulas", "link": "https://mercadorfabulas.wordpress.com" }
+    ],
+
+    "gallery": []
+
   },
 
   {
@@ -47,10 +63,10 @@
 
     "cover": "Coimbra.jpg",
 
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et vulputate urna. Morbi posuere purus ligula, quis faucibus purus sodales ut. Maecenas mattis consectetur eros, sollicitudin fringilla ex pretium vel. Donec mattis diam vel mi suscipit pharetra. Ut id metus leo. Aliquam nec lobortis diam. Mauris fringilla nibh sed enim vulputate scelerisque Integer eu volutpat ante. Sed luctus elit id libero semper tristique. Morbi eget elit fermentum purus feugiat tempus. Proin rutrum eget sem sed gravida. Pellentesque at tincidunt metus. Fusce leo velit, porta eget finibus non, elementum pulvinar justo. Maecenas ut magna dignissim, pharetra felis ut, egestas neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi quam elit, luctus sed orci semper, egestas aliquam diam. Nam neque ex, pretium eu urna sit amet, dictum dignissim odio.",
+    "text": "Jumping into a Bachelor’s in Computer Science was a natural step in my journey. It **reinforced the basics** I had learned and took my understanding of the field to new heights.\nI specialized in [Application Development](https://www.ipc.pt/oferta-formativa/licenciatura-em-engenharia-informatica-2/), where I dove into the world of app creation - from doodling initial designs on napkins to coding them into reality. I gained **profound knowledge** and sharpened my skills in areas I was passionate about.It turned out to be one of the **greatest adventures of my life**, filled with significant personal growth, new friendships, and life-changing moments.\nAdapting to the vibrant lifestyle and rich traditions of a city like **Coimbra** brought about substantial change, both academically and personally.",
     "references": [
-      { "title": "1 reference", "link": "" },
-      { "title": "2 reference", "link": "" }
+      { "title": "SOBay", "link": "https://github.com/brunopinto22/SOBay" },
+      { "title": "HomeSim", "link": "https://github.com/brunopinto22/HomeSim" }
     ],
 
     "gallery": [
