@@ -1,5 +1,6 @@
 import './time-item.scss';
 import React, {useEffect, useRef, useState, useMemo} from 'react';
+import Markdown from 'react-markdown';
 import { useIsInViewport } from '../../../helpers';
 
 import { Bullet } from '../../Icons';
@@ -67,14 +68,16 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
         />
 
         <div className="content">
-          <p className="text">{text}</p>
+          <p className="text"><Markdown>{text}</Markdown></p>
 
-          <div className="links">
-            <h1>Links:</h1>
-            {references.map((ref, index) => (
-              <a key={index} href={ref.link} className="link" target="_blank"><Bullet />{ref.title}</a>
-            ))}
-          </div>
+          {references.length > 0 && (
+            <div className="links">
+              <h1>Links:</h1>
+              {references.map((ref, index) => (
+                <a key={index} href={ref.link} className="link" target="_blank"><Bullet />{ref.title}</a>
+              ))}
+            </div>
+          )}
 
         </div>
 

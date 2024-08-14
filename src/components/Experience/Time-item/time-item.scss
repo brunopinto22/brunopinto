@@ -47,7 +47,17 @@
   }
 
   .content{
-    .text{white-space: pre-line;}
+
+    .text{ color: $primary-text-color; white-space: pre-line; }
+
+    strong{
+      font-family: $accent-font;
+      font-weight: 800;
+      color: $secundary-accent;
+    }
+
+    a{ font-family: $accent-font; color: $primary-accent; }
+
     .links{
       display: grid;
       font-family: $accent-font;
@@ -109,7 +119,7 @@
     .content{
       margin: 5svh 0;
 
-      .text{ margin-bottom: 10svh; }
+      .text{ margin-bottom: 10svh; line-height: 1.6em; }
 
       .links{
         margin: 5svh 0;
@@ -163,7 +173,7 @@
     .content{
       margin: 5svh 0;
 
-      .text{ margin-bottom: 5svh; }
+      .text{ margin-bottom: 5svh; line-height: 1.6em; }
 
       .links{
         margin: 5svh 0;
@@ -222,7 +232,7 @@
     .content{
       margin: 0;
 
-      .text{ margin-bottom: 5svh; }
+      .text{ font-size: 1.2em; margin-bottom: 5svh; line-height: 1.7em; }
 
       .links{
         margin: 0;
