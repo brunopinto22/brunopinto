@@ -47,6 +47,7 @@
 
   .text .title{ text-align: left; }
   .text .accent{ color: $secundary-accent; font-family: $accent-font; font-weight: 800; }
+  .text i{ color: $secundary-text-color; }
   .text a {
     color: $primary-accent;
     font-family: $accent-font;

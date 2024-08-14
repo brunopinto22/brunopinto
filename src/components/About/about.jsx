@@ -48,12 +48,12 @@ function About(props) {
 
         <div className="text">
           <p className='title'>Hi I'm <span className="title-font">{MainInfo.name}</span> , nice to meet you!</p>
-          <p>I'm a <span className="accent">Portuguese</span> Developer that started to get in love with Coding in High School during my professional course where I did an internship at <a href="https://www.critec.pt" target='_blank'>Critec</a> and learned more about web development and fell in love with it.</p>
-          <p>After the Course I decided to follow my passion for <span className="accent">Computer Science</span> and pursued Computer Science at <a href="https://www.isec.pt/PT/Default.aspx" target='_blank'>ISEC</a>.</p> <br />
-          <p>Along the way I made some projects that can be seen in my <a href={MainInfo.links.gihub} target='_blank'>GitHub</a> account.</p> <br />
-          <p>But enought about my studies and professional life.</p>
-          <p>What about my hobbies?</p> <br />
-          <p>I love <span className="accent">drawing</span> and <span className="accent">image manipulation</span>, I have my drawings on my dedicaded Instagram: <a href="https://www.instagram.com/pintoiguess" target='_blank'>@pintoiguess</a>.</p>
+          <p>I'm a <span className="accent">Portuguese Developer</span> who fell in love with coding early on. My passion for tech has led me to work on exciting projects and explore various aspects of development.</p>
+          <br />
+          <p>When I’m not coding, you might find me enjoying a coffee and hanging out with friends, diving into <span className="accent">drawing and art</span>, check out my artwork on Instagram: <a href="https://www.instagram.com/pintoiguess/" target="_blank" className="link">@pintoiguess</a> <i>(who doesn’t love a bit of self-advertising?)</i>.</p>
+          <p>No matter where I am, diving into songs and playlists. Music is my constant companion, whether I'm working, relaxing, or just going about my day — it’s always there to keep me inspired and energized.</p>
+          <br />
+          <p>Feel free to <a href="#contact" className="link">connect</a> with me and explore both my creative side and my love for life’s simple pleasures!</p>
         </div>
 
       </div>
