@@ -28,7 +28,7 @@ function App() {
 
       <Hover mousePos={mousePos} text={hoverText} onHover={onHover} />
 
-      <Skills />
+      <Skills mousePos={mousePos} />
 
       <Experience setHoverText={setHoverText} setOnHover={setOnHover} />
 
