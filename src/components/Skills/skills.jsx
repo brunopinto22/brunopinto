@@ -18,7 +18,7 @@ function Skills(props) {
       <div className="content">
 
         {SkillData.map((element, index) => (
-          <Card key={index} title={element.title} data={element.skills} />
+          <Card key={index} title={element.title} data={element.skills} mouse={props.mousePos} />
         ))}
 
       </div>
