@@ -1,14 +1,43 @@
 @import '../../../assets/styles/main.scss';
 
 .skill-card{
-
-  text-align: center;
+  position: relative;
+  overflow: hidden;
 
   background-color: $secundary-background;
 
   @include shadow(0,0,20px,-10px, rgba($shadow-color, 0.8));
 
+
+  &::before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-43%, -36%);
+
+    width: 70svh;
+    height: 70svh;
+
+    background: radial-gradient($secundary-text-color, transparent, transparent);
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    inset: 2px;
+    background: rgba($secundary-background, 0.9);
+    
+  }
+
+  .card-content{position: relative; z-index: 3;}
+
   .card-title{
+    text-align: center;
     font-family: $accent-font;
     font-weight: 700;
   }
@@ -39,13 +68,18 @@
   transition: all ease-in-out 0.2s;
   &:hover{
     transition: all ease-in-out 0.3s;
+
+    &::before{ opacity: 1;}
+
   }
 
 
   @media (min-width: $small-width){
     height: 40svh;
     padding: 5svh 3vw;
-    border-radius: 10vw;
+    border-radius: 8vw;
+    
+    &::after{ border-radius: 8vw; }
 
     .card-content{ height: 100%; }
 
@@ -82,7 +116,9 @@
   @media (min-width: $medium-width){
     height: unset;
     padding: 3svh 3vw 2svh;
-    border-radius: $outer-radius;
+    border-radius: 1.5vw;
+
+    &::after{ border-radius: 1.5vw; }
 
     .card-content{ height: unset; }
 
@@ -114,7 +150,9 @@
   @media (min-width: $large-width){
     height: unset;
     padding: 10svh 3vw;
-    border-radius: $outer-radius;
+    border-radius: 1.5vw;
+
+    &::after{ border-radius: 1.5vw; }
 
     .card-content{ height: unset; }
 

@@ -1,9 +1,9 @@
 import './card.scss';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { useIsInViewport } from '../../../helpers';
 
-const Card = ({ title, data }) => {
+const Card = ({ title, data, mouse }) => {
   const ref = useRef(null);
 
   const [inView, setInView] = useState(false);
@@ -11,8 +11,17 @@ const Card = ({ title, data }) => {
   if(isInView != inView)
     setInView(isInView);
 
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
+  useEffect(() => {
+    const bounds = ref.current.getBoundingClientRect();
+
+    setX(mouse.x - bounds.left);
+    setY(mouse.y - bounds.top);
+  }, [mouse])
+
   return (
-    <div className="skill-card">
+    <div className="skill-card" style={{ '--x': x + 'px', '--y': y + 'px'}}>
       <div className="card-content">
 
         <h1 className="card-title">{title}</h1>
