@@ -39,7 +39,8 @@ html, body{
 
 .link{
   transition: all ease-out 0.2s;
-  &:hover{ transition: all ease-in 0.2s; color: $primary-accent; }
+  svg{ transition: all ease-in 0.2s; }
+  &:hover{ transition: all ease-in 0.2s; color: $primary-accent; svg{ transition: all ease-in 0.2s; } }
 }
 
 .primary-button{

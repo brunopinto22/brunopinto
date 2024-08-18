@@ -56,7 +56,17 @@
       color: $secundary-accent;
     }
 
-    a{ font-family: $accent-font; color: $primary-accent; }
+    a {
+      color: $primary-accent;
+      font-family: $accent-font;
+      font-weight: 500;
+  
+      transition: all 0.2s;
+      &:hover{
+        transition: all 0.5s;
+        color: mix($primary-accent, #fff, 50%);
+      }
+    }
 
     .links{
       display: grid;
