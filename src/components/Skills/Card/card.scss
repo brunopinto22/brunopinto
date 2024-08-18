@@ -14,8 +14,6 @@
     position: absolute;
     z-index: 1;
 
-    top: var(--y);
-    left: var(--x);
     transform: translate(-43%, -36%);
 
     width: 70svh;
@@ -78,6 +76,10 @@
     padding: 5svh 3vw;
     border-radius: 8vw;
     
+    &::before{
+      top: var(--y);
+      left: var(--x);
+    }
     &::after{ border-radius: 8vw; }
 
     .card-content{ height: 100%; }
@@ -117,6 +119,10 @@
     padding: 3svh 3vw 2svh;
     border-radius: 1.5vw;
 
+    &::before{
+      top: var(--y);
+      left: var(--x);
+    }
     &::after{ border-radius: 1.5vw; }
 
     .card-content{ height: unset; }
@@ -151,6 +157,10 @@
     padding: 10svh 3vw;
     border-radius: 1.5vw;
 
+    &::before{
+      top: var(--y);
+      left: var(--x);
+    }
     &::after{ border-radius: 1.5vw; }
 
     .card-content{ height: unset; }
