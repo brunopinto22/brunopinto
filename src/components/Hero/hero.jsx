@@ -9,6 +9,7 @@ import { MainInfo } from '../../data';
 import { Arrow, GitHub, Linkedin, Mail } from '../Icons';
 
 function Hero(props) {
+  const NDOTS = 13;
   const [isHovered, setIsHovered] = useState(false);
 
   const el = React.useRef(null);
@@ -54,7 +55,7 @@ function Hero(props) {
         </div>
 
         <div className="dots-grid">
-          { Array.from({ length: 13*13}, (_, i) => (
+          { Array.from({ length: NDOTS*NDOTS}, (_, i) => (
             <Dot key={i} mousePos={props.mousePos} isHovered={isHovered} />
           )) }
         </div>
