@@ -192,8 +192,8 @@ nav {
 
   &.hide{ box-shadow: none; }
 
-  span{ cursor: pointer; svg { transition: 0.2s; } }
-  span:hover svg{ transform: rotate(90deg); fill: $primary-accent; transition: 0.2s;}
+  span{ cursor: pointer; svg { transition: cubic-bezier(0.42, 0, 0.89, 1.55) 0.2s; } }
+  span:hover svg{ transform: rotate(120deg); fill: $primary-accent; transition: 0.5s;}
 
   .content {
     display: flex;
