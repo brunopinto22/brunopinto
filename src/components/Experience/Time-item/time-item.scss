@@ -72,10 +72,15 @@
       display: grid;
       font-family: $accent-font;
       h1{ color: $secundary-accent; }
-      a{
+      .link{
         display: grid;
-        color: $secundary-text-color;
-        &:hover{ color: $primary-accent; svg{ fill: $primary-accent;} }
+        width: fit-content;
+        
+        &,svg{
+          color: $secundary-text-color;
+          transition: all 0.2s;
+          &:hover{ color: $primary-accent; svg{ fill: $primary-accent;} }
+        }
       }
     }
   }
