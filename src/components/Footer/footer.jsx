@@ -42,7 +42,7 @@ function Footer(props) {
           <p>SCSS</p>
           <p>Figma</p>
           <p>Blender</p>
-          <p className="accent">+99 Coffe Cups</p>
+          <p className="accent">+99 Cups of Coffee</p>
         </div>
 
         <div>
