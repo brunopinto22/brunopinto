@@ -12,6 +12,7 @@
 
   background: $secundary-background;
   font-family: $accent-font;
+  font-size: var(--fs-200);
   font-weight: 800;
   border-radius: 50%;
   pointer-events: none;
@@ -33,7 +34,6 @@
   
   @media (min-width: $large-width){
     display: flex;
-    font-size: 1em;
   }
 
 }
