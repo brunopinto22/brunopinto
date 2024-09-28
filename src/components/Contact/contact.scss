@@ -40,7 +40,13 @@
     &.discord{ .lines svg, .accent svg{ fill: $discord; } }
   }
 
-  .links{ position: relative; display: grid; font-family: $accent-font; color: $secundary-text-color; }
+  .links{
+    position: relative;
+    display: grid;
+    font-family: $accent-font;
+    font-size: var(--fs-300);
+    color: $secundary-text-color;
+  }
 
   .links *{
     transition: all ease-out 0.2s;
@@ -81,13 +87,11 @@
     .title{
       display: unset;
       text-align: center;
-      font-size: 1em;
       .lines svg { width: 0; fill: $primary-accent; }
     }
 
     .links{
       margin: 5svh 0 0;
-      font-size: 1.3em;
 
       a {
         display: flex;
@@ -119,14 +123,9 @@
 
     }
 
-    .title{
-      font-size: 2em;
-    }
-
     .links {
       justify-content: center;
       margin: 5svh 0 0;
-      font-size: 2em;
 
       a {
         display: flex;
@@ -192,7 +191,6 @@
       align-items: end;
       justify-content: space-between;
       text-align: center;
-      font-size: 2em;
       .lines svg { width: 15%; fill: $primary-accent; }
     }
 
@@ -200,7 +198,6 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       justify-items: center;
       margin: 15svh 0 0;
-      font-size: 1.3em;
 
       a {
         display: grid;

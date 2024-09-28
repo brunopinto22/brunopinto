@@ -2,15 +2,20 @@
 
 #work {
 
+  .title{
+    text-align: center;
+  
+    .accent svg{
+      top: 100%;
+      width: 120%;
+    }
+
+  }
+
   .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .title .accent svg{
-    top: 100%;
-    width: 120%;
   }
 
   .img-grid{
@@ -30,12 +35,10 @@
 
   @media (min-width: $small-width){
     padding: 40svh $small-secundary-padding;
-    
-    .title{ font-size: 1.3em; text-align: center; }
 
     .content{ padding: 10svh 0;}
 
-    .primary-button{ margin: 10vh 0; padding: 1.5svh 0; font-size: 1.2em; width: 100%; text-align: center; }
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 0; width: 100%; text-align: center; }
 
     .img-grid{
       grid-template-columns: 1fr;
@@ -50,9 +53,7 @@
   @media (min-width: $medium-width){
     padding: 30svh $medium-secundary-padding;
 
-    .title{ font-size: 2em; }
-
-    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; font-size: 1.2em; width: 50%; }
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; width: 50%; }
 
     .img-grid{ .img-container{ border-radius: 2vw; } }
 
@@ -61,11 +62,9 @@
   @media (min-width: $large-width){
     padding: 68svh $large-secundary-padding;
 
-    .title{ font-size: 2em; }
-
     .content{ padding: 10svh 0;}
 
-    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; font-size: 1.2em; width: unset; }
+    .primary-button{ margin: 10vh 0; padding: 1.5svh 5vw; width: unset; }
 
     .img-grid{
       width: unset;

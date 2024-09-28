@@ -28,7 +28,7 @@ html, body{
   display: none;
 }
 
-.title-font, .title{ font-family: $title-font; font-weight: 100; color: $accent-text-color;}
+.title-font, .title{ font-family: $title-font; font-weight: 100; color: $accent-text-color; font-size: var(--fs-700);}
 .base-font{ font-family: $base-font; }
 .accent-font{ font-family: $accent-font; }
 
@@ -45,6 +45,7 @@ html, body{
 .primary-button{
 
   font-family: $accent-font;
+  font-size: var(--fs-300);
   font-weight: 900;
 
   background-color: transparent;

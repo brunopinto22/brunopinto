@@ -24,9 +24,15 @@
     @include shadow(0,0,40px,0, #0000007a);
   }
 
+  .text{ font-size: var(--fs-300); }
+
+  .text .title{ font-size: var(--fs-600); text-align: left; }
+
   .text .title-font {
     position: relative;
     z-index: 1;
+
+    font-size: var(--fs-700);
 
     &::after{
       content: "";
@@ -45,7 +51,6 @@
 
   }
 
-  .text .title{ text-align: left; }
   .text .accent{ color: $secundary-accent; font-family: $accent-font; font-weight: 800; }
   .text i{ color: $secundary-text-color; }
   .text a {
@@ -63,7 +68,6 @@
   @media (min-width: $small-width){
     padding: 20svh $small-secundary-padding;
 
-    .title{ font-size: 1.3em;}
     .title .accent::after{
       width: 25vw; height: 25vw;
       top: 50%;
@@ -87,11 +91,9 @@
     .pfp { border-radius: 3vw; }
 
     .text{
-      font-size: 1.2em;
       line-height: 1.2em;
       p{ margin: 0; }
-      .title{ font-size: 1.2em; margin-bottom: 2em;}
-      .title-font{ font-size: 1.2em; }
+      .title{ margin-bottom: 2em;}
     }
 
   }
@@ -99,7 +101,6 @@
   @media (min-width: $medium-width){
     padding: 30svh $medium-secundary-padding;
 
-    .title{ font-size: 2em;}
     .title .accent::after{
       width: 15vw; height: 15vw;
       top: 50%;
@@ -123,11 +124,9 @@
     .pfp { border-radius: 2vw; }
 
     .text{
-      font-size: 1.8em;
       line-height: 1.4em;
       p{ margin: 0; }
-      .title{ font-size: 1.2em; margin-bottom: 2em;}
-      .title-font{ font-size: 1.2em; }
+      .title{ margin-bottom: 2em;}
     }
 
   }
@@ -135,7 +134,6 @@
   @media (min-width: $large-width){
     padding: 20svh $large-secundary-padding;
 
-    .title{ font-size: 2em;}
     .title .accent::after{
       width: 8vw; height: 8vw;
       top: 50%;
@@ -150,21 +148,20 @@
     }
 
     .container{
-      margin: 20vh 0;
+      margin: 20svh 0;
       grid-template-columns: 40% 1fr;
       grid-template-rows: unset;
       grid-gap: 5vw;
-      align-items: center;
+      align-items: unset;
     }
 
     .pfp { border-radius: $inner-radius; }
 
     .text{
-      font-size: 1.3em;
+      margin-top: 8svh;
       line-height: 1.3em;
       p{ margin: 0;}
-      .title{ font-size: 1.5em; margin-bottom: 2em;}
-      .title-font{ font-size: 1.2em; }
+      .title{ margin-bottom: 2em;}
     }
 
   }

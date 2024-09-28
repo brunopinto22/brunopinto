@@ -37,6 +37,7 @@
   .card-title{
     text-align: center;
     font-family: $accent-font;
+    font-size: var(--fs-400);
     font-weight: 700;
   }
 
@@ -45,6 +46,7 @@
     h2{
       text-align: left;
       font-family: $base-font;
+      font-size: var(--fs-300);
       font-weight: 200;
     }
 
@@ -84,10 +86,6 @@
 
     .card-content{ height: 100%; }
 
-    .card-title{
-      font-size: 1.6em;
-    }
-
     .progress-container{
       display: flex;
       flex-flow: column;
@@ -97,7 +95,6 @@
       padding: 0 8vw;
 
       h2{
-        font-size: 1.2em;
         margin: 0 0 0.8svh 0.8vw;
       }
 
@@ -127,15 +124,10 @@
 
     .card-content{ height: unset; }
 
-    .card-title{
-      font-size: 1.5em;
-    }
-
     .progress-container{
       padding: 6svh 0 0;
 
       h2{
-        font-size: 1.3em;
         margin: 0 0 0.8svh 0.8vw;
       }
 
@@ -165,15 +157,10 @@
 
     .card-content{ height: unset; }
 
-    .card-title{
-      font-size: 1.6em;
-    }
-
     .progress-container{
       padding: 6svh 0 0;
 
       h2{
-        font-size: 1.2em;
         margin: 0 0 0.8svh 0.8vw;
       }
 

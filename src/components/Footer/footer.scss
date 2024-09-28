@@ -31,7 +31,9 @@ footer {
       margin: 0;
     }
 
+    h1 { font-size: var(--fs-400); }
     p, a{
+      font-size: var(--fs-200); 
       font-weight: 300;
     }
 
@@ -42,7 +44,7 @@ footer {
     position: relative;
     text-align: center;
     
-    h3{ font-weight: 100; }
+    h3{ font-size: var(--fs-300); font-weight: 100; }
 
     &::before {
       content: "";
@@ -67,8 +69,8 @@ footer {
 
       *{ width: unset; }
 
-      h1{ font-size: 1.5em; margin-bottom: 0.8em;}
-      p, a{ font-size: 1em; line-height: 2em; }
+      h1{ margin-bottom: 0.8em;}
+      p, a{ line-height: 2em; }
 
     }
 
@@ -88,8 +90,8 @@ footer {
 
       *{ width: max-content; }
       
-      h1{ font-size: 2em; margin-bottom: 0.8em;}
-      p, a{ font-size: 1.2em; line-height: 2em; }
+      h1{ margin-bottom: 0.8em;}
+      p, a{ line-height: 2em; }
 
     }
 
@@ -110,8 +112,8 @@ footer {
 
       *{ width: max-content; }
       
-      h1{ font-size: 1.8em; margin-bottom: 0.8em;}
-      p, a{ font-size: 1em; line-height: 2em; }
+      h1{ margin-bottom: 0.8em;}
+      p, a{ line-height: 2em; }
 
     }
 

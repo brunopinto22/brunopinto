@@ -6,11 +6,6 @@
   position: relative;
   overflow: hidden;
 
-  .title{
-    text-align: center;
-    text-transform: capitalize;
-  }
-
   &::before{
     content: '';
     position: absolute;
@@ -24,11 +19,6 @@
     padding: 100svh $small-secundary-padding;
     grid-gap: 100svh;
 
-    .title{
-      font-size: 2em;
-      .accent svg{ width: 150%;}
-    }
-
     &::before{
       width: 3px;
       left: calc($large-secundary-padding/2);
@@ -39,11 +29,6 @@
     padding: 70vh $medium-secundary-padding;
     grid-gap: 100svh;
 
-    .title{
-      font-size: 2em;
-      .accent svg{ width: 150%;}
-    }
-
     &::before{
       width: 2px;
       left: calc($large-secundary-padding/1.5);
@@ -53,11 +38,6 @@
   @media (min-width: $large-width){
     padding: 200svh $large-secundary-padding;
     grid-gap: 100svh;
-
-    .title{
-      font-size: 2em;
-      .accent svg{ width: 150%;}
-    }
 
     &::before{
       width: 2px;

@@ -7,9 +7,13 @@ header{
 
   .hero-text{
 
+    font-size: var(--fs-600);
+
     .title-font{
       position: relative;
       z-index: 1;
+
+      font-size: var(--fs-900);
 
       &::after{
         content: "";
@@ -31,7 +35,9 @@ header{
       color: $secundary-text-color;
     }
 
-    .primary-button{ display: inline-block; }
+    .primary-button{
+      display: inline-block;
+    }
 
     .socials svg {
       fill: $primary-text-color; opacity: 0.7;
@@ -101,6 +107,7 @@ header{
     p{
       z-index: 2;
       font-family: $accent-font;
+      font-size: var(--fs-200);
       font-weight: 500;
     }
 
@@ -138,16 +145,12 @@ header{
       height: 20svh;
       z-index: 1;
 
-      font-size: 1.1em;
-
-      h2{ font-weight: 300; line-height: 0.9em;}
+      h2{ font-weight: 300; line-height: 0.9em; }
       #typed{ font-weight: 700;}
 
       .primary-button{
         margin: 6vh 0;
         padding: 1.5vh 10vw;
-        
-        font-size: 0.8em;
 
         border-width: 0.2em;
       }
@@ -199,15 +202,13 @@ header{
 
     .hero-text{
       display: unset;
-      font-size: 1.5em;
 
-      h2{ font-weight: 300; line-height: 0.5em;}
+      h2{ font-weight: 300; line-height: 0.9em; }
       #typed{ font-weight: 700;}
 
       .primary-button{
         margin: 5vh 0;
         padding: 1.2vh 5vw;
-        font-size: 0.8em;
         border-width: 0.2em;
       }
 
@@ -245,7 +246,6 @@ header{
       display: none;
     }
 
-
   }
   
   @media (min-width: $large-width){
@@ -256,16 +256,13 @@ header{
 
     .hero-text{
       display: unset;
-      font-size: 2.5em;
 
-      h2{ font-weight: 300; line-height: 0.5em;}
+      h2{ font-weight: 300; line-height: 0.5em; }
       #typed{ font-weight: 700;}
 
       .primary-button{
         margin: 6vh 0;
         padding: 1.5vh 3vw;
-        
-        font-size: 0.5em;
 
         border-width: 0.2em;
       }

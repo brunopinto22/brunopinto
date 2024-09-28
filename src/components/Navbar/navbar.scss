@@ -39,6 +39,9 @@ nav {
       a h1{
         position: relative;
         display: inline-block;
+
+        font-size: var(--fs-700);
+
         &::after {
           content: "";
           position: absolute;
@@ -111,8 +114,6 @@ nav {
     .content{
       grid-template-columns: auto auto;
 
-      font-size: 1em;
-
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
 
@@ -131,8 +132,6 @@ nav {
     .content{
       grid-template-columns: 1fr 1fr;
 
-      font-size: 1.4em;
-
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
 
@@ -150,8 +149,6 @@ nav {
 
     .content{
       grid-template-columns: 1fr 1fr;
-
-      font-size: 1.4em;
 
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
@@ -197,6 +194,7 @@ nav {
 
   .content {
     display: flex;
+    a { font-size: var(--fs-200); }
   }
 
   @media (min-width: $small-width){
@@ -235,7 +233,7 @@ nav {
       justify-content: center;
       text-align: center;
 
-      a{ margin: 2svh 0; font-size: 1.4em; }
+      a{ margin: 2svh 0; }
 
     }
 
@@ -257,7 +255,7 @@ nav {
       justify-content: center;
       text-align: center;
 
-      a{ margin: 2svh 0; font-size: unset; }
+      a{ margin: 2svh 0; }
 
     }
 
