@@ -107,7 +107,7 @@
   }
   
   @media (min-width: $medium-width){
-    .content{ padding: 50svh $large-secundary-padding; }
+    .content{ padding: 0svh $large-secundary-padding 20svh; }
 
     .background p{
       width: 80vw;
@@ -115,7 +115,7 @@
 
       &:nth-child(1){
         opacity: 0.05;
-        top: 30%;
+        top: 00%;
         left: 40%;
         border-radius: 162% 60% 141% 57%;
         transform: rotate(16deg);
