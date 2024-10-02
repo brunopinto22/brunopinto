@@ -17,7 +17,7 @@
 
   {
     "firstYear": 2021,
-    "lastYear": 2021,
+    "lastYear": null,
 
     "title": "Intern in Web Development",
     "place": "Critec",
@@ -55,7 +55,7 @@
 
   {
     "firstYear": 2021,
-    "lastYear": 2025,
+    "lastYear": null,
 
     "title": "Bachelor in Computer Science",
     "place": "ISEC",
