@@ -1,0 +1,44 @@
+@import '../../assets/styles/main.scss';
+
+
+#loader {
+
+  --time: 0.2s;
+  transition: opacity var(--time);
+
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  width: 100svw;
+  height: 100svh;
+  
+  background-color: $tertiary-background;
+
+  .loading svg {
+    transform: scale(1.4);
+  }
+
+  .loading svg polyline {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline#back {
+    fill: none;
+    stroke: mix($secundary-accent, $tertiary-background, 20%);
+  }
+  
+  .loading svg polyline#front {
+    fill: none;
+    stroke: $primary-accent;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: heart-beat 1.4s linear infinite;
+  }
+
+}

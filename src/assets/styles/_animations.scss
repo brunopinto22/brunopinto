@@ -15,3 +15,13 @@
   90%{ width: 110%;}  
   100%{ width: 0%;}
 }
+
+@keyframes heart-beat {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

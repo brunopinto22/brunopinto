@@ -1,3 +1,4 @@
+export { default as Loader } from "./Loader/loader";
 export { default as Hover } from "./Hover/hover";
 
 export { default as Navbar } from "./Navbar/navbar";

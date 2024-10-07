@@ -2,7 +2,7 @@ import "./App.scss";
 import React, { useState, useEffect } from 'react';
 
 import { MainInfo } from "./data";
-import { Navbar, Footer, Hover, Hero, Skills, Experience, Work, About, Contact } from "./components";
+import { Navbar, Footer, Hover, Hero, Skills, Experience, Work, About, Contact, Loader } from "./components";
 
 function App() {
 
@@ -19,8 +19,12 @@ function App() {
   const [onHover, setOnHover] = useState(false);
   const [hoverText, setHoverText] = useState('hover here');
 
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
+
+      {loading ? <Loader setLoading={setLoading} timeout={3} fadeout={0.5} /> : <></> }
 
       <Navbar />
       
