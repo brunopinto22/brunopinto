@@ -64,10 +64,10 @@
       font-family: $accent-font;
       font-weight: 500;
   
-      transition: all 0.2s;
+      transition: all 1.5s ease-out;
       &:hover{
-        transition: all 0.5s;
         color: mix($primary-accent, #fff, 50%);
+        transition: all 0.2s ease-in;
       }
     }
 
