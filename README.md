@@ -1,6 +1,6 @@
 <h1 align='center'>Bruno Pinto's Personal Portfolio</h1>
 
-# [![Jason Lengstorf has a lot of ideas](./public/readme.png)]()
+# [![LandingPage](./docs/readme.png)]()
 
 <div align='center'>
 
