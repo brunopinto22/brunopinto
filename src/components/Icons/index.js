@@ -1,3 +1,4 @@
+export { default as Menu } from "./menu";
 export { default as Arrow } from "./arrow";
 export { default as Circle } from "./circle";
 export { default as Underline } from "./underline";
