@@ -13,6 +13,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
     setShow(!show);
 
     document.body.style.overflow = show ? '' : 'hidden';
+      document.body.style.overflowX = 'hidden';
     setHoverText('Leave');
     setOnHover(!show);
 
