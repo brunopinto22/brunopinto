@@ -86,8 +86,8 @@ nav {
       svg{ fill: $primary-text-color; transition: all 0.2s; }
 
       &:hover svg{
-        fill: $secundary-accent;
-        filter: drop-shadow($secundary-accent 0 0 0.5em);
+        fill: $accent-text-color;
+        filter: drop-shadow($accent-text-color 0 0 0.5em);
         transition: all 0.2s;
       }
     }
