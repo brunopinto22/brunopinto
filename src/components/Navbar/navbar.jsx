@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './navbar.scss';
 
 import { MainInfo } from '../../data';
-import { Bullet } from '../Icons';
+import { Menu, Bullet } from '../Icons';
 
 
 function Navbar(props) {
@@ -20,7 +20,7 @@ function Navbar(props) {
           </a>
         </div>
         <div className="right">
-          <div id="ham" onClick={handleClick}> <div></div><div></div> </div>
+          <div id="ham" onClick={handleClick}> <Menu /> </div>
         </div>
       </div>
     </nav>

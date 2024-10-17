@@ -72,39 +72,26 @@ nav {
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: center;
+      height: 100%;
+    }
+
+    #ham{
+      position: relative;
+
+      height: 100%;
+      aspect-ratio: 1;
+
+      cursor: pointer;
+
+      svg{ fill: $primary-text-color; transition: all 0.2s; }
+
+      &:hover svg{
+        fill: $secundary-accent;
+        filter: drop-shadow($secundary-accent 0 0 0.5em);
+        transition: all 0.2s;
+      }
     }
     
-  }
-
-  #ham{
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    div{
-      position: relative;
-      overflow: hidden;
-      background: $primary-text-color;
-
-      &::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        right: -100%;
-        background:  $secundary-accent;
-        transition: all 0.5s;
-      }
-
-    }
-
-    &:hover div::before{
-      right: 0;
-      transition: all 0.3s;
-    }
-
   }
 
 
@@ -117,11 +104,8 @@ nav {
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
 
-    }
+      #ham{ height: 90%; }
 
-    #ham{
-      height: 0.7em;
-      div { width: 1.2em; height: 20%}
     }
 
   }
@@ -135,11 +119,8 @@ nav {
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
 
-    }
+      #ham{ height: 90%; }
 
-    #ham{
-      height: 1vh;
-      div { width: 1em; height: 20%}
     }
 
   }
@@ -153,11 +134,8 @@ nav {
       .logo a h1{ text-align: left; }
       &:last-child{ text-align: right;}
 
-    }
+      #ham{ height: 70%; }
 
-    #ham{
-      height: 1vh;
-      div { width: 1em; height: 20%}
     }
 
   }
