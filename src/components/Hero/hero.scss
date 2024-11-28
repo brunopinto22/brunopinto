@@ -26,9 +26,16 @@ header{
         width: 105%;
 
         background-color: $primary-accent;
+
         opacity: 0.5;
       }
 
+    }
+
+    #typed {
+      background: linear-gradient(180deg, $secundary-accent, $secundary-accent-800);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .typed-cursor{
