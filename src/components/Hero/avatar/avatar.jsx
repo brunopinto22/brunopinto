@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { useGLTF } from '@react-three/drei'
 
 export function Head(props) {
-  const { nodes, materials } = useGLTF("public/head.glb");
+  const { nodes, materials } = useGLTF("3d/head.glb");
 
   const [rotation, setRotation] = useState(3);
   useEffect(() => {
