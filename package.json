@@ -1,6 +1,7 @@
 {
   "name": "brunopinto",
   "version": "1.0.0",
+  "homepage": "https://brunopinto22.github.io/brunopinto/",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.88.11",
