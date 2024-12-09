@@ -49,7 +49,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
           onClick={handleClick} onMouseEnter={() => handleMouseEnter('Leave')} onMouseLeave={handleMouseLeave}
         >
           {gallery.map((item, index) => (
-            <div key={index} style={{backgroundImage: `url(img/${item})`}}></div>
+            <div key={index} style={{backgroundImage: `url(public/img/${item})`}}></div>
           ))}
         </div>
       )}
@@ -62,7 +62,7 @@ const TimeItem = ({ firstYear, lastYear, title, place, placeLink, cover, text, r
       <div className="content-container">
 
         <div className={"image-cover " + (gallery.length > 0 ? "no-cursor hover" : "")}
-          style={{backgroundImage: `url(img/${cover})`}}
+          style={{backgroundImage: `url(public/img/${cover})`}}
           onMouseEnter={() => handleMouseEnter('Click')}
           onMouseLeave={handleMouseLeave}
           onClick={handleClick}

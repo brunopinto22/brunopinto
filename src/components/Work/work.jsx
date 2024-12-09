@@ -28,19 +28,19 @@ function Work(props) {
           <a
             key={index}
             className="img-container no-cursor"
-            style={{backgroundImage: (item.img && `url(img/${item.img})`)}}
+            style={{backgroundImage: (item.img && `url(public/img/${item.img})`)}}
             href={item.url}
             target='_blank'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <img src={"img/" + item.img} alt={item.img} />
+            <img src={"public/img/" + item.img} alt={item.img} />
           </a>
           ) : (
           <div
             key={index}
             className="img-container"
-            style={{backgroundImage: (item.img && `url(img/${item.img})`)}}
+            style={{backgroundImage: (item.img && `url(public/img/${item.img})`)}}
           >
             <img src={"img/" + item.img} alt={item.img} />
           </div>
