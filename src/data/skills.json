@@ -8,13 +8,13 @@
         "link" : ""
       },
       {
-        "name": "C++",
-        "percentage" : 55,
+        "name": "Java",
+        "percentage" : 75,
         "link" : ""
       },
       {
-        "name": "Java",
-        "percentage" : 45,
+        "name": "C++",
+        "percentage" : 55,
         "link" : ""
       }
     ]
