@@ -65,6 +65,7 @@
 
     "text": "Acquiring a Bachelor’s in Computer Science was a natural step in my journey. It **reinforced the basics** I had learned and took my understanding of the field to new heights.\nI specialized in [Application Development](https://www.ipc.pt/oferta-formativa/licenciatura-em-engenharia-informatica-2/), where I dove into the world of app creation - from doodling initial designs on napkins to coding them into reality. I gained **profound knowledge** and sharpened my skills in areas I was passionate about.It turned out to be one of the **greatest adventures of my life**, filled with significant personal growth, new friendships, and life-changing moments.\nAdapting to the vibrant lifestyle and rich traditions of a city like **Coimbra** brought about substantial change, both academically and personally.",
     "references": [
+      { "title": "Multim", "link": "https://gitlab.com/gps_g321/gps_g32" },
       { "title": "SOBay", "link": "https://github.com/brunopinto22/SOBay" },
       { "title": "HomeSim", "link": "https://github.com/brunopinto22/HomeSim" }
     ],
