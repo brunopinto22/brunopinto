@@ -1,6 +1,8 @@
 @import './assets/styles/main.scss';
 
 html, body{
+  overflow-x: hidden;
+
   margin: 0;
   scroll-behavior: smooth;
   cursor: default;
