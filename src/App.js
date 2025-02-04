@@ -19,7 +19,7 @@ function App() {
   const [onHover, setOnHover] = useState(false);
   const [hoverText, setHoverText] = useState('hover here');
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   return (
     <>
