@@ -10,7 +10,7 @@ function Experience(props) {
 
   const [inView, setInView] = useState(false);
   const isInView = useIsInViewport(ref);
-  if(isInView != inView)
+  if(isInView !== inView)
     setInView(isInView);
 
   useEffect(() => {
